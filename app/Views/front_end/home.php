@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 
 <!-- Hero -->
-<section id="hero" class="d-flex align-items-center">
+<!-- <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
         <div class="row">
             <div class="col text-center">
@@ -16,7 +16,21 @@
 
         </div>
     </div>
-</section>
+</section> -->
+
+<div id="banner" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/assets/img/banner.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/img/banner-2.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/img/banner-3.JPG" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
 
 <!-- why us -->
 <section class="why-us">
