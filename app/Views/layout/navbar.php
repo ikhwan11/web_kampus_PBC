@@ -33,6 +33,10 @@
                 <div class="tooltip">Youtube</div>
                 <span><i class="fab fa-youtube"></i></span>
             </div>
+            <div class="icon admin">
+                <div class="tooltip">Admin</div>
+                <span><i class="fas fa-user"></i></span>
+            </div>
         </div>
 
     </div>
@@ -46,12 +50,32 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto " href="#hero">Beranda</a></li>
+                    <li><a class="nav-link scrollto " href="/">Beranda</a></li>
                     <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
-                    <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a><span>Program Studi</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/Prodi/pp/">D4 Pengelolaan Perhotelan</a></li>
+                            <li><a href="/Prodi/pw/">D3 Perjalanan Wisata</a></li>
+                            <li><a href="/Prodi/sk/">D3 Seni Kuliner</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Akademik</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Tenaga Pengajar</a></li>
+                            <li><a href="#">Prakerin (OJT)</a></li>
+                            <li><a href="#">Kerjasama Kami</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Kemahasiswaan</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="#">Unit Kegiatan Mahasiswa</a></li>
+                            <li><a href="#">Info Prestasi</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#">PBC News</a></li>
+                    <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
                             <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -63,12 +87,8 @@
                                     <li><a href="#">Deep Drop Down 5</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Drop Down 2</a></li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
                         </ul>
-                    </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </li> -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
