@@ -10,8 +10,7 @@
 	<meta content="" name="keywords">
 
 	<!-- Favicons -->
-	<link href="assets/img/favicon.png" rel="icon">
-	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<link href="/assets/img/icon_pbc.png" rel="icon">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -31,7 +30,11 @@
 </head>
 
 <body>
+	<!-- widgets -->
+	<div class="widget">
+		<a href="https://api.whatsapp.com/send?phone=6287755661122">WhatsApp <i class="fab fa-whatsapp"></i></a>
 
+	</div>
 	<?= $this->include('layout/navbar'); ?>
 	<?= $this->renderSection('content'); ?>
 	<?= $this->include('layout/footer'); ?>
