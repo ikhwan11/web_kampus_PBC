@@ -526,7 +526,7 @@
     </section>
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <!-- <section id="gallery" class="gallery">
         <div class="container">
 
             <div class="section-title">
@@ -606,7 +606,7 @@
 
         </div>
         <a href="#" class="more-btn">Lebih Banyak Lagi <i class="fas fa-chevron-right"></i></a>
-    </section>
+    </section> -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

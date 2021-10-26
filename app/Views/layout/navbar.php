@@ -23,19 +23,19 @@
         <div class="wrapper">
             <div class="icon facebook">
                 <div class="tooltip">Facebook</div>
-                <span><i class="fab fa-facebook-f"></i></span>
+                <span><a href="" class="text-white"><i class="fab fa-facebook-f"></i></a></span>
             </div>
             <div class="icon instagram">
                 <div class="tooltip">Instagram</div>
-                <span><i class="fab fa-instagram"></i></span>
+                <span><a href="" class="text-white"><i class="fab fa-instagram"></i></a></span>
             </div>
             <div class="icon youtube">
                 <div class="tooltip">Youtube</div>
-                <span><i class="fab fa-youtube"></i></span>
+                <span><a href="" class="text-white"><i class="fab fa-youtube"></i></a></span>
             </div>
             <div class="icon admin">
                 <div class="tooltip">Admin</div>
-                <span><i class="fas fa-user"></i></span>
+                <span><a href="/auth/login/" class="text-white"><i class="fas fa-user"></i></a></span>
             </div>
         </div>
 
@@ -51,7 +51,7 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link scrollto " href="/">Beranda</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
+                    <li><a class="nav-link scrollto" href="/about/">Tentang Kami</a></li>
                     <li class="dropdown"><a><span>Program Studi</span> <i class="fas fa-chevron-down"></i></a>
                         <ul>
                             <li><a href="/Prodi/pp/">D4 Pengelolaan Perhotelan</a></li>
@@ -63,13 +63,7 @@
                         <ul>
                             <li><a href="/dosen/">Tenaga Pengajar</a></li>
                             <li><a href="/kerjasama/">Kerjasama Kami</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#"><span>Kemahasiswaan</span> <i class="fas fa-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="#">Event</a></li>
-                            <li><a href="#">Info Prestasi</a></li>
-                            <li><a href="#">Gallery</a></li>
+                            <li><a href="">SIAKAD</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="/news/">PBC News</a></li>
