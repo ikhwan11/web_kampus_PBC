@@ -10,7 +10,7 @@
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url(/assets/img/banner.jpg)">
+            <div class="carousel-item active" style="background-image: url(/assets/img/hero_home/1.jpg)">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="container">
@@ -24,7 +24,7 @@
                 </div>
 
             </div>
-            <div class="carousel-item" style="background-image: url(/assets/img/banner-2.jpg)">
+            <div class="carousel-item" style="background-image: url(/assets/img/hero_home/2.jpg)">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="container">
@@ -38,7 +38,7 @@
                 </div>
 
             </div>
-            <div class="carousel-item" style="background-image: url(/assets/img/banner-3.jpg)">
+            <div class="carousel-item" style="background-image: url(/assets/img/hero_home/3.jpg)">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="container">
@@ -63,6 +63,9 @@
     <!-- tentang kami -->
     <section id="about" class="about">
         <div class="container">
+            <div class="section-title">
+                <h2>Tentang Kami</h2>
+            </div>
             <div class="jumbotron">
                 <div class="row">
                     <div class="col-sm-4">
@@ -89,64 +92,137 @@
                             <div class="tab-pane active show" id="tab-1">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Architecto ut aperiam autem id</h3>
-                                        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui.</p><br>
+                                        <h3>Selamat datang di website kami</h3>
+                                        <p>Sebagai pionir pendidikan tinggi di Indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik, di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi. Dengan lingkungan pembelajaran yang penuh semangat dan potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi pemimpin global yang inovatif.</p><br>
                                         <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="/assets/img/about-bg.jpg" alt="" class="img-fluid">
+                                        <img src="/assets/img/tentang/dir.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab-2">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Et blanditiis nemo veritatis excepturi</h3>
+                                        <h3>PBC</h3>
                                         <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. </p><br>
                                         <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="" alt="" class="img-fluid">
+                                        <img src="/assets/img/tentang/about-bg.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab-3">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                                        <h3>Sejarah PBC</h3>
                                         <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. </p><br>
                                         <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="" alt="" class="img-fluid">
+                                        <img src="/assets/img/tentang/sejarah.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="tab-4">
                                 <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. </p>
-                                        <br>
-                                        <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                    <div class="col-md-6">
+                                        <h4>Visi</h4>
+                                        <p>Menjadi perguruan tinggi yang unggul dan terkemuka di indonesia untuk menghasilkan tenaga profesional dan wirausahawan yang memiliki kompetensi terbaik dan berwawasan global serta berlandaskan pada kearifan lokal.</p>
                                     </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="" alt="" class="img-fluid">
+                                    <div class="col-md-6">
+                                        <h4>Misi</h4>
+                                        <p>
+                                        <ol>
+                                            <li>
+                                                Melaksanakan pendidikan vokasi di bidang pariwisata dengan luaran menghasilkan tenaga kerja profesional dan memiliki jiwa wirausahawan yang berkualitas, berkarakter, dan beretika;
+                                            </li>
+                                            <li>
+                                                Melaksanakan dan mengembangkan penelitian serta pengabdian kepada masyarakat pada bidang pariwisata;
+                                            </li>
+                                            <li>
+                                                Meningkatkan kualitas tata kelola institusi, dengan menjalankan peningkatan yang berkelanjutan dan berdasarkan pada prinsip tata kelola yang baik;
+                                            </li>
+                                            <li>
+                                                Membentuk tenaga pendidik dan kependidikan yang kompoten, profesional, berkarakter, dan beretika;
+                                            </li>
+                                            <li>
+                                                Mengembangkan kerjasama timbal balik dengan pemangku kepentingan (stakeholders) untuk mendukung proses Tri Dharma Perguruan Tinggi.
+                                            </li>
+                                        </ol>
+                                        </p>
                                     </div>
                                 </div>
+
+                                <br>
+                                <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+
                             </div>
                             <div class="tab-pane" id="tab-5">
+
+                                <h3>Fasilitas PBC</h3>
                                 <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui.</p>
-                                        <br>
-                                        <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                    <div class="col-sm-6">
+                                        <p>
+                                        <ul>
+                                            <li>
+                                                Ruang kelas full AC
+                                            </li>
+                                            <li>
+                                                Area kampus full WiFi
+                                            </li>
+                                            <li>
+                                                Perpustakaan
+                                            </li>
+                                            <li>
+                                                Lab. Komputer
+                                            </li>
+                                            <li>
+                                                Lab. Bahasa
+                                            </li>
+                                            <li>
+                                                Lab. Kitchen
+                                            </li>
+                                            <li>
+                                                Lab. Pastry
+                                            </li>
+                                            <li>
+                                                Lab. Front Office
+                                            </li>
+                                        </ul>
+                                        </p>
                                     </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="" alt="" class="img-fluid">
+                                    <div class="col-sm-6">
+                                        <ul>
+                                            <li>
+                                                Lab. Housekeeping
+                                            </li>
+                                            <li>
+                                                Lab. Laindry
+                                            </li>
+                                            <li>
+                                                Restaurant
+                                            </li>
+                                            <li>
+                                                Mock Up Room
+                                            </li>
+                                            <li>
+                                                Lab. Airlines Ticketing
+                                            </li>
+                                            <li>
+                                                Lab. Perjalanan Wisata
+                                            </li>
+                                            <li>
+                                                Lab. Tour & Travel
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
+
+                                <br>
+                                <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right mb-3"></i></a>
+
                             </div>
                         </div>
                     </div>
@@ -352,9 +428,9 @@
                     <div class="swiper-slide">
                         <div class="berita-wrap">
                             <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/berita.JPG" class="img img-responsive">
+                                <div class="profile-card-6"><img src="/assets/img/news/berita-2.JPG" class="img img-responsive">
                                     <div class="profile-name">
-                                        Mahasiswa PBC Mengikuti Lomba Memasak International di Singapura
+                                        Serah Terima Jabatan Direktur Politeknik Bintan Cakrawala
                                     </div>
                                     <div class="profile-overview">
                                         <div class="profile-overview">
@@ -369,9 +445,9 @@
                     <div class="swiper-slide">
                         <div class="berita-wrap">
                             <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/berita.JPG" class="img img-responsive">
+                                <div class="profile-card-6"><img src="/assets/img/news/berita-3.JPG" class="img img-responsive">
                                     <div class="profile-name">
-                                        Mahasiswa PBC Mengikuti Lomba Memasak International di Singapura
+                                        Cuaca Hari Ini Pulau Bintan Termasuk Cuaca Besok, BMKG: Waspada Potensi Hujan
                                     </div>
                                     <div class="profile-overview">
                                         <div class="profile-overview">
@@ -386,9 +462,9 @@
                     <div class="swiper-slide">
                         <div class="berita-wrap">
                             <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/berita.JPG" class="img img-responsive">
+                                <div class="profile-card-6"><img src="/assets/img/news/berita-4.JPG" class="img img-responsive">
                                     <div class="profile-name">
-                                        Mahasiswa PBC Mengikuti Lomba Memasak International di Singapura
+                                        Saat Tanjungpinang Naik Jadi Level 2, Gubernur Tegaskan Kepri Masih PPKM Level 1
                                     </div>
                                     <div class="profile-overview">
                                         <div class="profile-overview">
@@ -402,7 +478,7 @@
                     </div>
 
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-berita-pagination"></div>
             </div>
 
         </div>
@@ -413,7 +489,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 flyer">
-                    <img src="/assets/img/About.JPG" class="img-fluid" alt="...">
+                    <img src="/assets/img/banner_promosi.JPG" class="img-fluid" alt="...">
                 </div>
                 <div class="col-md-4 flyer-kanan">
                     <h3>Daftar sekarang untuk mendapatkan promosi</h3><br>
@@ -486,38 +562,172 @@
                     <div class="swiper-slide">
                         <div class="partner-wrap">
                             <div class="partner-item">
-                                <img src="/assets/img/logo-kerjasama/garuda-indonesia.png" class="img-fluid partner-img" alt="">
+                                <img src="/assets/img/logo-kerjasama/1.png" class="img-fluid partner-img" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="partner-wrap">
                             <div class="partner-item">
-                                <img src="/assets/img/logo-kerjasama/anmon.jpg" class="img-fluid partner-img" alt="">
+                                <img src="/assets/img/logo-kerjasama/2.png" class="img-fluid partner-img" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="partner-wrap">
                             <div class="partner-item">
-                                <img src="/assets/img/logo-kerjasama/natra-resort.png" class="img-fluid partner-img" alt="">
+                                <img src="/assets/img/logo-kerjasama/3.png" class="img-fluid partner-img" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="partner-wrap">
                             <div class="partner-item">
-                                <img src="/assets/img/logo-kerjasama/harriss.jpg" class="img-fluid partner-img" alt="">
+                                <img src="/assets/img/logo-kerjasama/4.jpg" class="img-fluid partner-img" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="partner-wrap">
                             <div class="partner-item">
-                                <img src="/assets/img/logo-kerjasama/marriott.png" class="img-fluid partner-img" alt="">
+                                <img src="/assets/img/logo-kerjasama/5.jpg" class="img-fluid partner-img" alt="">
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/6.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/7.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/8.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/9.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/10.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/11.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/12.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/13.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/14.jpeg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/15.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/16.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/17.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/18.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/19.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/20.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/21.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/22.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/23.png" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-wrap">
+                            <div class="partner-item">
+                                <img src="/assets/img/logo-kerjasama/24.jpg" class="img-fluid partner-img" alt="">
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
@@ -622,63 +832,6 @@
             <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0142652902987!2d104.32490791430641!3d1.1503003625056039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d97f7927c4669d%3A0xbdecc4ad7485fab!2sPoliteknik%20Bintan%20Cakrawala!5e0!3m2!1sen!2sid!4v1635000679735!5m2!1sen!2sid" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div class="container">
-            <div class="row mt-5">
-
-                <div class="col-lg-4">
-                    <div class="info">
-                        <div class="address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h4>Location:</h4>
-                            <p>Jl. Kota Kapur, Kawasan Pariwisata Bintan Resort, Sebong Lagoi, Bintan, Kepulauan Riau</p>
-                        </div>
-
-                        <div class="email">
-                            <i class="bi bi-envelope"></i>
-                            <h4>Email:</h4>
-                            <p>Poltek.bintancakrawala@pbc.ac.id</p>
-                        </div>
-
-                        <div class="phone">
-                            <i class="bi bi-phone"></i>
-                            <h4>Call:</h4>
-                            <p>0877-5566-1122</p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-8 mt-5 mt-lg-0">
-
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6 form-group mt-3 mt-md-0">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group mt-3">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                    </form>
-
-                </div>
-
-            </div>
-
-        </div>
     </section>
 
     <!-- ----------------------------------------------------------------------  -->

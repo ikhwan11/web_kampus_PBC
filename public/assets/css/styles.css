@@ -182,7 +182,7 @@ section {
 
 .wrapper .icon {
   position: relative;
-  background-color: #e2e617;
+  background-color: #f0ec24;
   border-radius: 50%;
   padding: 10px;
   margin: 10px;
@@ -1036,18 +1036,18 @@ section {
   overflow: hidden;
 }
 
-.berita .swiper-pagination {
+.berita .swiper-berita-pagination {
   margin-top: 20px;
   position: relative;
 }
-.berita .swiper-pagination .swiper-pagination-bullet {
+.berita .swiper-berita-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #1977cc;
 }
-.berita .swiper-pagination .swiper-pagination-bullet-active {
+.berita .swiper-berita-pagination .swiper-pagination-bullet-active {
   background-color: #1977cc;
 }
 @media (max-width: 767px) {
@@ -1423,15 +1423,17 @@ section {
   # Footer
   --------------------------------------------------------------*/
 #footer {
-  color: #444444;
+  color: #fff;
   font-size: 14px;
-  background: #f1f7fd;
+  background: #1977cc;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  color: #fff;
+  background: #1977cc;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
+
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -1447,12 +1449,12 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #777777;
+  color: #fff;
 }
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #f0ec24;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1479,7 +1481,7 @@ section {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1494,7 +1496,7 @@ section {
 #footer .footer-newsletter h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: #f0ec24;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1527,12 +1529,12 @@ section {
   border-radius: 50px;
 }
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #1c84e3;
+  background: #f0ec24;
 }
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+  color: #fff;
 }
 #footer .social-links a {
   font-size: 18px;
@@ -1549,9 +1551,13 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #1c84e3;
-  color: #fff;
+  background: #f0ec24;
+  color: #331c06;
   text-decoration: none;
+}
+
+#footer .copyright span {
+  color: #f0ec24;
 }
 
 /* MENU TeNTANG KAMI */
