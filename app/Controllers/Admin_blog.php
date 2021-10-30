@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class Admin_banner extends BaseController
+class Admin_blog extends BaseController
 {
     public function index()
     {

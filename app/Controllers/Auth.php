@@ -8,4 +8,8 @@ class Auth extends BaseController
     {
         return view('back_end/login');
     }
+
+    public function login_aksi()
+    {
+    }
 }
