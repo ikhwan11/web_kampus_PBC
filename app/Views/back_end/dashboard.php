@@ -9,7 +9,7 @@
             <h3 class="mb-0"> Hi, welcome back! <span class="pl-0 h6 pl-sm-2 text-muted d-inline-block">Your web analytics dashboard template.</span>
             </h3>
             <div class="d-flex">
-                <a href="/admin_user/" class="btn btn-sm ml-3 btn-success">Kelola User</a>
+                <a href="/admin_user" class="btn btn-sm ml-3 btn-success">Kelola User</a>
             </div>
         </div>
         <div class="row">

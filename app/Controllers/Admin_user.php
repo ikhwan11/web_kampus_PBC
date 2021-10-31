@@ -15,11 +15,17 @@ class Admin_user extends BaseController
 
     public function index()
     {
-        return view('back_end/user');
+        $data = [
+            'user_data' => $this->userModel->findAll()
+        ];
+        return view('back_end/user', $data);
     }
-    public function detail()
+    public function detail($id)
     {
-        return view('back_end/user_detail');
+        $data = [
+            'user_data' => $this->userModel->getData($id)
+        ];
+        return view('back_end/user_detail', $data);
     }
 
     // create data
@@ -66,15 +72,92 @@ class Admin_user extends BaseController
             'password' => $this->request->getVar('password'),
         ]);
 
-        session()->setFlashdata('pesan', 'Data user berhasil ditambahkan.');
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        data user berhasil ditambah.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
 
         return redirect()->to('/Admin_user');
     }
 
     // end create
 
-    public function edit()
+    // update
+    public function edit($id)
     {
-        return view('back_end/user_edit');
+        $data = [
+            'validation' => \Config\Services::validation(),
+            'user_data' => $this->userModel->getData($id)
+        ];
+        return view('back_end/user_edit', $data);
+    }
+
+    public function edit_act($id)
+    {
+        $old_data = $this->userModel->getData($id);
+        if ($old_data['username'] == $this->request->getVar('username')) {
+            $rule_username = 'required';
+        } else {
+            $rule_username = 'required|is_unique[tb_user.username]';
+        }
+
+        if (!$this->validate([
+
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi.'
+                ]
+            ],
+            'username' => [
+                'rules' => $rule_username,
+                'errors' => [
+                    'required' => '{field} harus diisi.',
+                    'is_unique' => '{field} sudah ada.'
+                ]
+            ],
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi.'
+                ]
+            ],
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to('/Admin_user/edit/' . $this->request->getVar('id'))->withInput()->with('validation', $validation);
+        }
+
+        $this->userModel->save([
+            'id' => $id,
+            'nama' => $this->request->getVar('nama'),
+            'role' => $this->request->getVar('role'),
+            'username' => $this->request->getVar('username'),
+            'password' => $this->request->getVar('password'),
+        ]);
+
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        data user berhasil diubah.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+
+        return redirect()->to('/Admin_user');
+    }
+
+    // end update
+    public function delete($id)
+    {
+        $this->userModel->delete($id);
+
+        session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        data user berhasil dihapus.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+        return redirect()->to('/admin_user');
     }
 }

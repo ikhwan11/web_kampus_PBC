@@ -15,12 +15,12 @@ class Mod_user extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
-    // public function getUser($id = false)
-    // {
-    //     if ($id == false) {
-    //         return $this->findAll();
-    //     }
+    public function getData($id = false)
+    {
+        if ($id == false) {
+            return $this->findAll();
+        }
 
-    //     return $this->where(['id' => $id])->first();
-    // }
+        return $this->where(['id' => $id])->first();
+    }
 }

@@ -7,7 +7,7 @@
         </div>
         <ul class="nav mt-3">
             <li class="nav-item">
-                <a class="nav-link" href="/admin_dashboard/">
+                <a class="nav-link" href="/admin_dashboard">
                     <i class="mdi mdi-home menu-icon"></i>
                     <span class="menu-title">Dashboard</span>
                 </a>
@@ -33,31 +33,31 @@
                 </div>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link" href="/admin_tenagapengajar/">
+                <a class="nav-link" href="/admin_tenagapengajar">
                     <i class="mdi mdi-contacts menu-icon"></i>
                     <span class="menu-title">Tenaga Pengajar</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin_blog/">
+                <a class="nav-link" href="/admin_blog">
                     <i class="mdi mdi-format-list-bulleted menu-icon"></i>
                     <span class="menu-title">Kelola Blog</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/admin_banner/">
+                <a class="nav-link" href="/admin_banner">
                     <i class="mdi mdi-format-list-bulleted menu-icon"></i>
                     <span class="menu-title">Banner Promosi</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/charts/chartjs.html">
+                <a class="nav-link" href="#">
                     <i class="mdi mdi-chart-bar menu-icon"></i>
                     <span class="menu-title">Kerjasama</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="pages/tables/basic-table.html">
+                <a class="nav-link" href="#">
                     <i class="mdi mdi-table-large menu-icon"></i>
                     <span class="menu-title">Fasilitas</span>
                 </a>
