@@ -37,7 +37,6 @@
 	</div>
 	<?= $this->include('layout/navbar'); ?>
 	<?= $this->renderSection('content'); ?>
-	<?= $this->include('layout/footer'); ?>
 
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
@@ -61,28 +60,25 @@
 						<h4>Useful Links</h4>
 						<ul>
 							<li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang PBC</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Prodi</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Dosen</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Blog</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#about">Tentang PBC</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="#doctors">Dosen</a></li>
+
 						</ul>
 					</div>
 
 					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Useful Links</h4>
+						<h4>---------------------</h4>
 						<ul>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Unit Kegiatan Mahasiswa</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Kerjasama Kami</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#">Event</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="/kerjasama">Kerjasama Kami</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="">SIAKAD</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="/news">Blog</a></li>
 						</ul>
 					</div>
 
 					<div class="col-lg-4 col-md-6 footer-newsletter">
-						<h4>Feedback</h4>
-						<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-						<form action="" method="post">
-							<input type="email" name="email"><input type="submit" value="Subscribe">
-						</form>
+						<h4>YouTube</h4>
+						<p>Temukan kami di YouTube:</p>
+
 					</div>
 
 				</div>

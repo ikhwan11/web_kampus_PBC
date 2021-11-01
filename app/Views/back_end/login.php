@@ -30,23 +30,32 @@
                                     <img src="/assets/img/icon_pbc.png" class="img-fluid mb-3 mx-auto d-block" alt="" width="100">
                                 </div>
                             </div>
-                            <form action="#" class="signin-form">
+                            <form action="/Auth/login_act" method="POST" class="signin-form">
+                                <?php if (session()->getFlashdata('pesan')) : ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <?= session()->get('pesan'); ?>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                <?php endif; ?>
+                                <?= csrf_field(); ?>
                                 <div class="form-group mt-3">
-                                    <input type="text" class="form-control">
-                                    <label class="form-control-placeholder" for="username">Username</label>
+                                    <input placeholder="username.." type="text" class="form-control" name="username" id="username" autofocus>
+
                                 </div>
                                 <div class="form-group">
-                                    <input id="password-field" type="password" class="form-control">
-                                    <label class="form-control-placeholder" for="password">Password</label>
+                                    <input placeholder="password.." id="password-field" type="password" class="form-control" name="password" id="password">
+
                                 </div>
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <!-- <button type="submit" href="/admin/" class="form-control btn btn-primary rounded submit px-3">Login</button> -->
-                                            <a href="/admin_dashboard/" class="text-white form-control btn btn-primary rounded submit px-3">Login</a>
+                                            <input type="submit" name="login" class="form-control btn btn-primary rounded submit px-3" value="LOGIN">
+                                            <!-- <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button> -->
                                         </div>
                                         <div class="col-md-6">
-                                            <a href="/" class="text-white form-control btn btn-danger rounded submit px-3">Cancel</a>
+                                            <a href="/" class="text-white form-control btn btn-danger rounded submit px-3">CANCEL</a>
                                         </div>
                                     </div>
                                 </div>

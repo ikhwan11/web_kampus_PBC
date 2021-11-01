@@ -23,22 +23,22 @@
             <div class="row">
                 <div class="col-lg-8">
                     <img src="/assets/img/prodi/tentang-pp.JPG" class="img-fluid" alt="">
-                    <h2>Meniti karir di bidang perhotelan</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illo cumque natus quam fugit cupiditate quo necessitatibus, quod quisquam autem eos tempore dolore a omnis ullam voluptates nobis obcaecati corrupti.
+                    <h2>Apa itu Pengelolaan Perhotelan?</h2>
+                    <p>Adalah program studi yang menerapkan dan mengembangkan pengetahuan, keterampilan dan ilmu perhotelan khususnya dalam perencanaan, memproduksi, dan pengawasan pengelolaan jasa penginapan.
                     </p>
                 </div>
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="/assets/img/testimonials/testimonials-4.jpg" class="card-img-top" alt="...">
+                        <img src="/assets/img/dosen/pak-welli.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Welli Braham</h5>
+                            <h5 class="card-title">Welli Braham Kurniawan, SST.Par., M.Par </h5>
                             <p class="card-text">Kaprodi Pengelolaan Perhotelan</p>
                             <div class="social-links text-center text-md-right pt-3 pt-md-0">
                                 <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
                                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="Youtube"><i class="fab fa-linkedin"></i></a>
                             </div>
-                            <a href="#" class="btn more-btn">Selengkapnya</a>
+                            <a href="/dosen/dosen_detail" class="btn more-btn">Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col">
 
                                     <div class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
                                         <div class="row align-items-center">
@@ -120,7 +120,7 @@
                                                     <i class="fa fa-check text-white  mr-2 mt-1"></i>
                                                     <span>
                                                         <span class="text-white">
-                                                            Hotel Manager
+                                                            Front Office Manager
                                                         </span>
                                                     </span>
                                                 </li>
@@ -134,50 +134,37 @@
                                                 <li class="mt-25">
                                                     <i class="fa fa-check text-white  mr-2 mt-1"></i>
                                                     <span class="text-white">
-                                                        Duty Manager
+                                                        Housekeeping Manager
+                                                    </span>
+                                                </li>
+                                                <li class="mt-25">
+                                                    <i class="fa fa-check text-white  mr-2 mt-1"></i>
+                                                    <span class="text-white">
+                                                        Excecutive Chef, Pastry Chef
+                                                    </span>
+                                                </li>
+                                                <li class="mt-25">
+                                                    <i class="fa fa-check text-white  mr-2 mt-1"></i>
+                                                    <span class="text-white">
+                                                        Barista, Bartender
+                                                    </span>
+                                                </li>
+                                                <li class="mt-25">
+                                                    <i class="fa fa-check text-white  mr-2 mt-1"></i>
+                                                    <span class="text-white">
+                                                        Entrepreneur
+                                                    </span>
+                                                </li>
+                                                <li class="mt-25">
+                                                    <i class="fa fa-check text-white  mr-2 mt-1"></i>
+                                                    <span class="text-white">
+                                                        Consultant
                                                     </span>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
 
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
-                                        <div class="row align-items-center">
-                                            <div class="col-12 col-md-4">
-                                                <i class="fas fa-briefcase"></i>
-                                                <h4 class="pt-3 text-170 text-600 text-primary-d1 letter-spacing">
-                                                    Prospek kerja
-                                                </h4>
-                                            </div>
-
-                                            <ul class="list-unstyled mb-0 col-12 col-md-8 text-dark-l1 text-90 text-left my-4 my-md-0">
-                                                <li>
-                                                    <i class="fa fa-check text-white mr-2 mt-1"></i>
-                                                    <span>
-                                                        <span class="text-white">
-                                                            Resorts
-                                                        </span>
-                                                    </span>
-                                                </li>
-
-                                                <li class="mt-25">
-                                                    <i class="fa fa-check text-white mr-2 mt-1"></i>
-                                                    <span class="text-white">
-                                                        Kapal Pesiar
-                                                    </span>
-                                                </li>
-
-                                                <li class="mt-25">
-                                                    <i class="fa fa-check text-white mr-2 mt-1"></i>
-                                                    <span class="text-white">
-                                                        Dinas Pariwisata
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

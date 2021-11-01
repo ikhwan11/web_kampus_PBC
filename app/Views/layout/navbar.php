@@ -33,12 +33,19 @@
                 <div class="tooltip">Youtube</div>
                 <span><a href="" class="text-white"><i class="fab fa-youtube"></i></a></span>
             </div>
+
+        </div>
+
+    </div>
+
+    <div class="d-none d-lg-flex social-links align-items-center">
+        <label for="">Login</label>
+        <div class="wrapper">
             <div class="icon admin">
                 <div class="tooltip">Admin</div>
                 <span><a href="/auth/login/" class="text-white"><i class="fas fa-user"></i></a></span>
             </div>
         </div>
-
     </div>
 </div>
 <!-- navbar -->

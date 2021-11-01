@@ -9,46 +9,50 @@
 
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
             <div class="carousel-item active" style="background-image: url(/assets/img/hero_home/1.jpg)">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="container">
-                            <div class="slide-right">
-                                <h2 class="text-white">Welcome to <br><span>Politeknik Bintan Cakrawala</span></h2>
-                            </div>
+
+                <div class="container">
+                    <div class="slide-right">
+                        <h2 class="text-white">Welcome to <br><span>Politeknik Bintan Cakrawala</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
                             <p class="text-white">Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan banyak hotel dan resort bintang 5.</p>
-                            <a href="#why-us" class="btn btn-get-started scrollto">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                         </div>
                     </div>
+                    <a href="#why-us" class="btn btn-get-started scrollto">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                 </div>
 
             </div>
             <div class="carousel-item" style="background-image: url(/assets/img/hero_home/2.jpg)">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="container">
-                            <div class="slide-right">
-                                <h2 class="text-white">Welcome to <br><span>Politeknik Bintan Cakrawala</span></h2>
-                            </div>
-                            <p class="text-white">Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan banyak hotel dan resort bintang 5.</p>
-                            <a href="#about" class="btn btn-get-started scrollto">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                <div class="container">
+                    <div class="slide-right">
+                        <h2 class="text-white">Bridging Excellence <br><span>for The Future</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-white">Sebagai kampus yang akan menjembatani keunggulan setiap individu demi meraih impian yang mulia.</p>
                         </div>
                     </div>
+
+                    <a href="#info-PMB" class="btn btn-get-started scrollto">Info PMB <i class="bx bx-chevron-right"></i></a>
                 </div>
+
 
             </div>
             <div class="carousel-item" style="background-image: url(/assets/img/hero_home/3.jpg)">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="container">
-                            <div class="slide-right">
-                                <h2 class="text-white">Welcome to <br><span>Politeknik Bintan Cakrawala</span></h2>
-                            </div>
-                            <p class="text-white">Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan banyak hotel dan resort bintang 5.</p>
-                            <a href="#about" class="btn btn-get-started scrollto">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                <div class="container">
+                    <div class="slide-right">
+                        <h2 class="text-white">Didukung oleh <br><span>Tenaga pengajar yang berpengalaman di industri.</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-white">Tenaga pengajar PBC sudah berpengalaman di industri sektor pariwisata.</p>
                         </div>
                     </div>
+
+                    <a href="#doctors" class="btn btn-get-started scrollto">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                 </div>
 
             </div>
@@ -78,13 +82,13 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Sejarah</a>
-                            </li>
+                                <!-- </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Visi dan Misi</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Fasilitas</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="col-md-8">
@@ -125,7 +129,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="tab-4">
+                            <!-- <div class="tab-pane" id="tab-4">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h4>Visi</h4>
@@ -158,8 +162,8 @@
                                 <br>
                                 <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
 
-                            </div>
-                            <div class="tab-pane" id="tab-5">
+                            </div> -->
+                            <!-- <div class="tab-pane" id="tab-5">
 
                                 <h3>Fasilitas PBC</h3>
                                 <div class="row">
@@ -223,7 +227,7 @@
                                 <br>
                                 <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right mb-3"></i></a>
 
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
@@ -321,13 +325,13 @@
 
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/1.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="/assets/img/dosen/pak-imam.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Imam Ozali</h4>
+                            <h4>Imam Ozali, AMTru, M.M</h4>
                             <span>Kaprodi Perjalanan Wisata</span>
                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             <div class="my-2">
-                                <a href="#" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                             </div>
                             <div class="social">
                                 <a href="" class="btn"><i class="fab fa-facebook"></i></a>
@@ -339,13 +343,13 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/1.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="/assets/img/dosen/pak-adi.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Imam Ozali</h4>
-                            <span>Kaprodi Perjalanan Wisata</span>
+                            <h4>Adiguna Tumpuan, S.ST., M.Par</h4>
+                            <span>Kaprodi Seni Kuliner</span>
                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             <div class="my-2">
-                                <a href="#" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                             </div>
                             <div class="social">
                                 <a href="" class="btn"><i class="fab fa-facebook"></i></a>
@@ -357,13 +361,13 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/1.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="/assets/img/dosen/pak-welli.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Imam Ozali</h4>
-                            <span>Kaprodi Perjalanan Wisata</span>
+                            <h4>Welli Braham Kurniawan, SST.Par., M.Par</h4>
+                            <span>Kaprodi Pengelolaan Perhotelan</span>
                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             <div class="my-2">
-                                <a href="#" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                             </div>
                             <div class="social">
                                 <a href="" class="btn"><i class="fab fa-facebook"></i></a>
@@ -375,13 +379,13 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/1.jpg" class="img-fluid" alt=""></div>
+                        <div class="pic"><img src="/assets/img/dosen/pak-yudi.jpg" class="img-fluid" alt=""></div>
                         <div class="member-info">
-                            <h4>Imam Ozali</h4>
-                            <span>Kaprodi Perjalanan Wisata</span>
+                            <h4>Yudy Sunatri, SE., M.Sc</h4>
+                            <span>Dosen</span>
                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             <div class="my-2">
-                                <a href="#" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                             </div>
                             <div class="social">
                                 <a href="" class="btn"><i class="fab fa-facebook"></i></a>
@@ -391,6 +395,7 @@
                         </div>
                     </div>
                 </div>
+
 
             </div>
 
@@ -418,7 +423,7 @@
                                     <div class="profile-overview">
                                         <div class="profile-overview">
                                             <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="#" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -435,7 +440,7 @@
                                     <div class="profile-overview">
                                         <div class="profile-overview">
                                             <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="#" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -452,7 +457,7 @@
                                     <div class="profile-overview">
                                         <div class="profile-overview">
                                             <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="#" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -469,7 +474,7 @@
                                     <div class="profile-overview">
                                         <div class="profile-overview">
                                             <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="#" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -485,16 +490,17 @@
     </section>
 
     <!-- ======= promosi Section ======= -->
-    <section id="promosi" class="promosi">
+    <section id="info-PMB" class="promosi">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 flyer">
-                    <img src="/assets/img/banner_promosi.JPG" class="img-fluid" alt="...">
+                    <img src="/assets/img/banner-pmb-website.png" class="img-fluid" alt="...">
                 </div>
                 <div class="col-md-4 flyer-kanan">
-                    <h3>Daftar sekarang untuk mendapatkan promosi</h3><br>
-                    <p>Promo ini hanya berlaku untuk 30 orang pendaftar pertama</p>
-                    <a href="#" class="more-btn">Daftar Sekarang <i class="fas fa-chevron-right"></i></a>
+                    <h3>PMB Tahun Akademik 2022/2023</h3><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, natus. Itaque, reiciendis error magnam voluptatum temporibus dolorum quas libero odio voluptas ad provident. Eum autem voluptate veritatis repellendus molestiae error.</p>
+                    <a href="" class="more-btn my-3">Tahap Mendaftar PBC <i class="fas fa-chevron-right"></i></a>
+                    <a href="https://s.id/pmbpbc" class="more-btn">Daftar Sekarang <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>

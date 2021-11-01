@@ -34,7 +34,7 @@
                         <span class="profile-name">Admin PBC</span>
                     </a>
                     <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item" href="/">
+                        <a class="dropdown-item" href="/auth/logout_act">
                             <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
                     </div>
                 </li>
