@@ -2565,10 +2565,32 @@ section {
   }
 }
 
-.kerjasama .title {
+.title-biru {
   text-align: left;
   font-size: 25px;
   font-weight: bold;
   position: relative;
   color: #1977cc;
+}
+
+.title-kuning {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  color: #f0ec24;
+}
+
+.kj img {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: ease-in-out 0.3s;
+}
+
+.kj img:hover {
+  transform: scale(1.1);
+}
+
+.kerjasama-1 {
+  background: #1977cc;
+  /* background: #f0ec24; */
 }

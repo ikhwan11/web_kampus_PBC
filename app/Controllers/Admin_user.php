@@ -69,7 +69,7 @@ class Admin_user extends BaseController
             'nama' => $this->request->getVar('nama'),
             'role' => $this->request->getVar('role'),
             'username' => $this->request->getVar('username'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
+            'password' => $this->request->getVar('password'),
         ]);
 
         session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">

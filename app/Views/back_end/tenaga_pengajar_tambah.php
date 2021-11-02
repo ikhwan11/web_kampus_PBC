@@ -18,95 +18,88 @@
         <div class="col-12 grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Horizontal Two column</h4>
-                    <form class="form-sample">
-                        <p class="card-description">Personal info</p>
+                    <form class="form-sample" method="POST" action="/admin_tenagapengajar/create_act" enctype="multipart/form-data">
+                        <?= csrf_field(); ?>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">First Name</label>
+                                    <label class="col-sm-3 col-form-label">Nama Lengkap</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Last Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Gender</label>
-                                    <div class="col-sm-9">
-                                        <select class="form-control">
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Date of Birth</label>
-                                    <div class="col-sm-9">
-                                        <input class="form-control" placeholder="dd/mm/yyyy" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Category</label>
-                                    <div class="col-sm-9">
-                                        <select class="form-control">
-                                            <option>Category1</option>
-                                            <option>Category2</option>
-                                            <option>Category3</option>
-                                            <option>Category4</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Membership</label>
-                                    <div class="col-sm-4">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked /> Free </label>
+                                        <input type="text" class="form-control <?= ($validation->hasError('nama')) ? 'is-invalid' : ''; ?>" name="nama" autofocus value="<?= old('nama'); ?>" />
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('nama'); ?>
                                         </div>
                                     </div>
-                                    <div class="col-sm-5">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2" /> Professional </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control" name="jk">
+                                            <option value="L">Laki-Laki</option>
+                                            <option value="P">Perempuan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Tempat Lahir</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control <?= ($validation->hasError('tempat_lahir')) ? 'is-invalid' : ''; ?>" name="tempat_lahir" value="<?= old('tempat_lahir'); ?>" />
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('tempat_lahir'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                                    <div class="col-sm-9">
+                                        <input type="date" class="form-control" name="tanggal_lahir" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="card-description">Alamat</p>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group row">
+                                    <label class="col-sm-3 col-form-label">Alamat Asal</label>
+                                    <div class="col-sm-9">
+                                        <input name="alamat" type="text" class="form-control <?= ($validation->hasError('alamat')) ? 'is-invalid' : ''; ?>" value="<?= old('alamat'); ?>" />
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('alamat'); ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <p class="card-description">Address</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Address 1</label>
+                                    <label class="col-sm-3 col-form-label">No hp</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
+                                        <input type="number" class="form-control <?= ($validation->hasError('no_hp')) ? 'is-invalid' : ''; ?>" name="no_hp" value="<?= old('no_hp'); ?>" />
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('no_hp'); ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">State</label>
+                                    <label class="col-sm-3 col-form-label">Email</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
+                                        <input type="email" class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : ''; ?>" name="email" value="<?= old('email'); ?>" />
+                                        <div class="invalid-feedback">
+                                            <?= $validation->getError('email'); ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -114,44 +107,33 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Address 2</label>
+                                    <label class="col-sm-3 col-form-label">Jabatan</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Postcode</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">City</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Country</label>
-                                    <div class="col-sm-9">
-                                        <select class="form-control">
-                                            <option>America</option>
-                                            <option>Italy</option>
-                                            <option>Russia</option>
-                                            <option>Britain</option>
+                                        <select class="form-control" name="jabatan">
+                                            <option value="1">Kaprodi</option>
+                                            <option value="2">Dosen</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="/assets/img/default.png" class="img-thumbnail img-preview">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="col-sm-3 col-form-label">Foto :</label>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input <?= ($validation->hasError('foto')) ? 'is-invalid' : ''; ?>" id="foto" name="foto" onchange="previewImg()">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('foto'); ?>
+                                    </div>
+                                    <label class="custom-file-label" for="foto">Pilih Foto</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary my-3">Submit</button>
                     </form>
                 </div>
             </div>

@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 $routes->delete('/admin_user/(:num)', 'Admin_user::delete/$1');
+$routes->delete('/admin_tenagapengajar/(:num)', 'Admin_tenagapengajar::delete/$1');
 
 /*
  * --------------------------------------------------------------------

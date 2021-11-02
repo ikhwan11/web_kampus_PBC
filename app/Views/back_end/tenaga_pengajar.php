@@ -18,36 +18,45 @@
         <!-- data -->
         <div class="row">
             <div class="container">
-                <a href="/admin_tenagapengajar/create/" class="btn btn-dark my-2"><i class="fa fa-plus"></i> Tambah Data Dosen</a>
+                <a href="/admin_tenagapengajar/create" class="btn btn-dark my-2"><i class="fa fa-plus"></i> Tambah Data Dosen</a>
             </div>
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Kelola Data Tenaga Pengajar</h4>
+                        <?= session()->get('pesan'); ?>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>Foto</th>
+                                        <th>No</th>
                                         <th>Nama</th>
                                         <th>Alamat</th>
-                                        <th>Role</th>
+                                        <th>jabatan</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-1">
-                                            <img src="/assets/img/dosen/1.jpg" alt="image" />
-                                        </td>
-                                        <td>Imam Ozali</td>
-                                        <td>Jakarta Selatan</td>
-                                        <td>Kaprodi Seni Kuliner</td>
-                                        <td>
-                                            <a href="/admin_tenagapengajar/detail/" class="btn btn-sm btn-warning">Detail</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <?php $no = 1;
+                                foreach ($dosen_data as $dosen) : ?>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <?= $no++; ?>
+                                            </td>
+                                            <td><?= $dosen['nama']; ?></td>
+                                            <td><?= $dosen['alamat_asal']; ?></td>
+                                            <?php if ($dosen['jabatan'] == 1) { ?>
+                                                <td>Kaprodi</td>
+                                            <?php } else { ?>
+                                                <td>Dosen</td>
+                                            <?php } ?>
+
+                                            <td>
+                                                <a href="/admin_tenagapengajar/detail/<?= $dosen['id_pengajar']; ?>" class="btn btn-sm btn-warning">Detail</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                <?php endforeach; ?>
                             </table>
                         </div>
                     </div>

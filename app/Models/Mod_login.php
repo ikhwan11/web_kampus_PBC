@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Mod_login extends Model
 {
 
-    function getLogin($username, $tbl)
+    public function getLogin($username, $tbl)
     {
         $builder = $this->db->table($tbl);
         $builder->where('username', $username);

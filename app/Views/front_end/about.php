@@ -74,21 +74,21 @@
 
             <div class="row">
                 <h4>Politeknik Bintan Cakrawala memiliki 3 prodi unggulan, yaitu:</h4>
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="col-lg-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-hotel"></i></div>
                         <h4><a href="">D4 Pengelolaan Perhotelan</a></h4>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="col-lg-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-passport"></i></div>
                         <h4><a href="">D3 Perjalanan Wisata</a></h4>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="col-lg-4">
                     <div class="icon-box">
                         <div class="icon"><i class="fas fa-utensils"></i></div>
                         <h4><a href="">D3 Seni Kuliner</a></h4>

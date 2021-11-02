@@ -15,11 +15,10 @@ class Auth extends BaseController
 
     public function login_act()
     {
-
         $model = new Mod_login();
         $table = 'tb_user';
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
         $row = $model->getLogin($username, $table);
 
         if ($row == NULL) {
@@ -28,16 +27,20 @@ class Auth extends BaseController
 
         if (password_verify($password, $row->password)) {
             $data = array(
-                'log' => TRUE,
                 'nama' => $row->nama,
                 'username' => $row->username,
                 'role' => $row->role,
             );
             session()->set($data);
 
-            return redirect()->to('/Admin_dashboard');
+            return redirect()->to('/admin_dashboard');
         }
-        session()->setFlashdata('pesan', 'Username atau Password salah');
+        session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            Username atau Password yang anda masukan salah.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>');
         return redirect()->to('/auth/login');
     }
 

@@ -1,77 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Login</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="/assets/img/icon_pbc.png" rel="icon">
-
-    <link rel="stylesheet" href="/assets/css/login_styles.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="/assets/admin/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="/assets/admin/vendors/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="/assets/admin/vendors/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="/assets/admin/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="/assets/admin/css/style.css" />
+    <link rel="stylesheet" href="/assets/admin/css/login_style.css" />
+    <link rel="shortcut icon" href="/assets/img/icon_pbc.png" />
 </head>
 
 <body>
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7 col-lg-5">
-                    <div class="wrap">
-                        <div class="img" style="background-image: url(/assets/img/About.jpg);"></div>
-                        <div class="login-wrap p-4 p-md-5">
-                            <div class="d-flex">
-                                <div class="w-100">
-                                    <img src="/assets/img/icon_pbc.png" class="img-fluid mb-3 mx-auto d-block" alt="" width="100">
+
+    <section class="body">
+        <div class="container-scroller">
+            <div class="container-fluid page-body-wrapper">
+                <div class="main-panel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">Login Form</h4>
+                                    <form action="/auth/login_act" method="POST">
+                                        <?= session()->get('pesan'); ?>
+                                        <?= csrf_field(); ?>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Username" name="username" id="username" autofocus autocomplete="off" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                        <button type="button" href="/" class="btn btn-warning">Cancel</button>
+                                    </form>
+
                                 </div>
                             </div>
-                            <form action="/Auth/login_act" method="POST" class="signin-form">
-                                <?php if (session()->getFlashdata('pesan')) : ?>
-                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                        <?= session()->get('pesan'); ?>
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                <?php endif; ?>
-                                <?= csrf_field(); ?>
-                                <div class="form-group mt-3">
-                                    <input placeholder="username.." type="text" class="form-control" name="username" id="username" autofocus>
-
-                                </div>
-                                <div class="form-group">
-                                    <input placeholder="password.." id="password-field" type="password" class="form-control" name="password" id="password">
-
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <input type="submit" name="login" class="form-control btn btn-primary rounded submit px-3" value="LOGIN">
-                                            <!-- <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button> -->
-                                        </div>
-                                        <div class="col-md-6">
-                                            <a href="/" class="text-white form-control btn btn-danger rounded submit px-3">CANCEL</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="form-group d-md-flex">
-                                    <div class="w-50 text-left">
-                                        <label class="checkbox-wrap checkbox-primary mb-0">Remember Me
-                                            <input type="checkbox" checked>
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="w-50 text-md-right">
-                                        <a href="#">Forgot Password</a>
-                                    </div>
-                                </div> -->
-                            </form>
-                            <!-- <p class="text-center">Not a member? <a data-toggle="tab" href="#signup">Sign Up</a></p> -->
                         </div>
                     </div>
                 </div>
@@ -79,9 +49,34 @@
         </div>
     </section>
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/login.js"></script>
 
+    </div>
+    <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="/assets/admin/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="/assets/admin/vendors/chart.js/Chart.min.js"></script>
+    <script src="/assets/admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/admin/vendors/flot/jquery.flot.js"></script>
+    <script src="/assets/admin/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="/assets/admin/vendors/flot/jquery.flot.categories.js"></script>
+    <script src="/assets/admin/vendors/flot/jquery.flot.fillbetween.js"></script>
+    <script src="/assets/admin/vendors/flot/jquery.flot.stack.js"></script>
+    <script src="/assets/admin/vendors/flot/jquery.flot.pie.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="/assets/admin/js/off-canvas.js"></script>
+    <script src="/assets/admin/js/hoverable-collapse.js"></script>
+    <script src="/assets/admin/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="/assets/admin/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
 </body>
 
 </html>
