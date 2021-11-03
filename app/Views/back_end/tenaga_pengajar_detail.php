@@ -29,13 +29,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h3 class="card-title"><?= $dosen_data['nama']; ?></h3>
-                        <?php if ($dosen_data['jabatan'] == 1) { ?>
-                            <p class="card-description text-danger"> Kaprodi <?= ($dosen_data['id_pengajar'] == '1') ? 'Seni Kuliner' : ''; ?> </p>
-                        <?php } else { ?>
-                            <p class="card-description text-danger"> Dosen</p>
-                        <?php } ?>
-
-
+                        <p class="card-description text-danger"> <?= $dosen_data['jabatan']; ?> </p>
                         <div class="table-responsive">
                             <table class="table table-hover">
                                 <tbody>

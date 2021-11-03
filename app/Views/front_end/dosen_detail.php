@@ -15,23 +15,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <img src="/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                    <img src="/assets/img/dosen/<?= $dosen_data['foto']; ?>" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-9">
-                    <h1>Imam Ozali</h1>
-                    <span>Kaprodi Seni Kuliner</span>
+                    <h1><?= $dosen_data['nama']; ?></h1>
+                    <span><?= $dosen_data['jabatan']; ?></span>
                     <hr>
                     <table class="table table-borderless">
                         <tbody>
                             <tr>
                                 <th scope="row">Tempat/Tanggal Lahir</th>
                                 <td>:</td>
-                                <td>Jakarta/30 September 1985</td>
+                                <td><?= $dosen_data['tempat_lahir']; ?>/<?= $dosen_data['tanggal_lahir']; ?></td>
                             </tr>
                             <tr>
                                 <th scope="row">Jabatan</th>
                                 <td>:</td>
-                                <td>Kaprodi Perjalanan Wisata</td>
+                                <td><?= $dosen_data['jabatan']; ?></td>
                             </tr>
                         </tbody>
                     </table>

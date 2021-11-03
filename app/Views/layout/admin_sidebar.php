@@ -34,23 +34,23 @@
             </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="/admin_tenagapengajar">
-                    <i class="mdi mdi-contacts menu-icon"></i>
+                    <i class="mdi mdi-account-card-details menu-icon"></i>
                     <span class="menu-title">Tenaga Pengajar</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/admin_blog">
-                    <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    <i class="mdi mdi-newspaper menu-icon"></i>
                     <span class="menu-title">Kelola Blog</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/admin_banner">
-                    <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                    <i class="mdi mdi-theater menu-icon"></i>
                     <span class="menu-title">Banner Promosi</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="mdi mdi-chart-bar menu-icon"></i>
                     <span class="menu-title">Kerjasama</span>
@@ -61,6 +61,6 @@
                     <i class="mdi mdi-table-large menu-icon"></i>
                     <span class="menu-title">Fasilitas</span>
                 </a>
-            </li>
+            </li> -->
         </ul>
     </nav>

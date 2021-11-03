@@ -12,10 +12,24 @@ class Admin_tenagapengajar extends BaseController
     {
         $this->dosenModel = new Mod_dosen();
     }
+
+
     public function index()
     {
+        $currentPage = $this->request->getVar('page_tb_dosen') ? $this->request->getVar('page_tb_dosen') : 1;
+
+        // search
+        $keyword = $this->request->getVar('keyword');
+        if ($keyword) {
+            $dosen = $this->dosenModel->search('keyword');
+        } else {
+            $dosen =  $this->dosenModel;
+        }
+
         $data = [
-            'dosen_data' => $this->dosenModel->findAll()
+            'dosen_data' => $dosen->paginate(5, 'tb_dosen'),
+            'pager' => $this->dosenModel->pager,
+            'currentPage' => $currentPage
         ];
         return view('back_end/tenaga_pengajar', $data);
     }

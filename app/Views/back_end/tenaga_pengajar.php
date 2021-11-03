@@ -23,20 +23,33 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Kelola Data Tenaga Pengajar</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="card-title">Kelola Data Tenaga Pengajar</h4>
+
+                                <form action="" method="POST">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Cari nama dosen.." name="keyword">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-danger" type="submit" name="submit">Cari</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
                         <?= session()->get('pesan'); ?>
-                        <div class="table-responsive">
+                        <div class="table-responsive mb-3">
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
-                                        <th>Alamat</th>
                                         <th>jabatan</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
-                                <?php $no = 1;
+                                <?php $no = 1 + (5 * ($currentPage - 1));
                                 foreach ($dosen_data as $dosen) : ?>
                                     <tbody>
                                         <tr>
@@ -44,12 +57,7 @@
                                                 <?= $no++; ?>
                                             </td>
                                             <td><?= $dosen['nama']; ?></td>
-                                            <td><?= $dosen['alamat_asal']; ?></td>
-                                            <?php if ($dosen['jabatan'] == 1) { ?>
-                                                <td>Kaprodi</td>
-                                            <?php } else { ?>
-                                                <td>Dosen</td>
-                                            <?php } ?>
+                                            <td><?= $dosen['jabatan']; ?></td>
 
                                             <td>
                                                 <a href="/admin_tenagapengajar/detail/<?= $dosen['id_pengajar']; ?>" class="btn btn-sm btn-warning">Detail</a>
@@ -59,6 +67,7 @@
                                 <?php endforeach; ?>
                             </table>
                         </div>
+                        <?= $pager->links('tb_dosen', 'admin_pagination'); ?>
                     </div>
                 </div>
             </div>

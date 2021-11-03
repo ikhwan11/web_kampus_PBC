@@ -318,84 +318,31 @@
 
             <div class="section-title">
                 <h2>Dosen Profesional</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>Politeknik Bintan Cakrawala didukung oleh tenaga pengajar yang ahli dan berpengalaman baik di pendidikan maupun industri.</p>
             </div>
 
             <div class="row">
+                <?php foreach ($dosen_data as $dosen) : ?>
+                    <div class="col-lg-6">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="/assets/img/dosen/<?= $dosen['foto']; ?>" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4><?= $dosen['nama']; ?></h4>
+                                <span><?= $dosen['jabatan']; ?></span>
 
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/pak-imam.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Imam Ozali, AMTru, M.M</h4>
-                            <span>Kaprodi Perjalanan Wisata</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="my-2">
-                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="" class="btn"><i class="fab fa-facebook"></i></a>
-                                <a href="" class="btn"><i class="fab fa-instagram"></i></a>
-                                <a href="" class="btn"> <i class="fab fa-linkedin"></i> </a>
+                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="my-2">
+                                    <a href="/dosen/dosen_detail/<?= $dosen['id_pengajar']; ?>" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                                <div class="social">
+                                    <a href="" class="btn"><i class="fab fa-facebook"></i></a>
+                                    <a href="" class="btn"><i class="fab fa-instagram"></i></a>
+                                    <a href="" class="btn"> <i class="fab fa-linkedin"></i> </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/pak-adi.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Adiguna Tumpuan, S.ST., M.Par</h4>
-                            <span>Kaprodi Seni Kuliner</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="my-2">
-                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="" class="btn"><i class="fab fa-facebook"></i></a>
-                                <a href="" class="btn"><i class="fab fa-instagram"></i></a>
-                                <a href="" class="btn"> <i class="fab fa-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/pak-welli.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Welli Braham Kurniawan, SST.Par., M.Par</h4>
-                            <span>Kaprodi Pengelolaan Perhotelan</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="my-2">
-                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="" class="btn"><i class="fab fa-facebook"></i></a>
-                                <a href="" class="btn"><i class="fab fa-instagram"></i></a>
-                                <a href="" class="btn"> <i class="fab fa-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="member d-flex align-items-start">
-                        <div class="pic"><img src="/assets/img/dosen/pak-yudi.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Yudy Sunatri, SE., M.Sc</h4>
-                            <span>Dosen</span>
-                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                            <div class="my-2">
-                                <a href="/dosen/dosen_detail" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <div class="social">
-                                <a href="" class="btn"><i class="fab fa-facebook"></i></a>
-                                <a href="" class="btn"><i class="fab fa-instagram"></i></a>
-                                <a href="" class="btn"> <i class="fab fa-linkedin"></i> </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <?php endforeach; ?>
 
             </div>
 

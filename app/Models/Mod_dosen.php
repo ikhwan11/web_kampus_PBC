@@ -9,7 +9,7 @@ class Mod_dosen extends Model
     protected $table      = 'tb_dosen';
     protected $primaryKey = 'id_pengajar';
 
-    protected $allowedFields = ['id', 'nama', 'jenis_kelamin', 'tanggal_lahir', 'tempat_lahir', 'alamat_asal', 'jabatan', 'foto', 'no_hp', 'email'];
+    protected $allowedFields = ['nama', 'jenis_kelamin', 'tanggal_lahir', 'tempat_lahir', 'alamat_asal', 'jabatan', 'foto', 'no_hp', 'email'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
@@ -22,5 +22,10 @@ class Mod_dosen extends Model
         }
 
         return $this->where(['id_pengajar' => $id])->first();
+    }
+
+    public function search($keyword)
+    {
+        return $this->table('tb_dosen')->like('nama', $keyword);
     }
 }

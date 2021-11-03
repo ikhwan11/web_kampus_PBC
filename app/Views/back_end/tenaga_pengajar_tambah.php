@@ -110,8 +110,12 @@
                                     <label class="col-sm-3 col-form-label">Jabatan</label>
                                     <div class="col-sm-9">
                                         <select class="form-control" name="jabatan">
-                                            <option value="1">Kaprodi</option>
-                                            <option value="2">Dosen</option>
+                                            <option value="Kaprodi Perjalanan Wisata">Kaprodi Perjalanan Wisata</option>
+                                            <option value="Kaprodi Seni Kuliner">Kaprodi Seni Kuliner</option>
+                                            <option value="Kaprodi Pengelolaan Perhotelan">Kaprodi Pengelolaan Perhotelan</option>
+                                            <option value="Dosen Perjalanan Wisata">Dosen Perjalanan Wisata</option>
+                                            <option value="Dosen Seni Kuliner">Dosen Seni Kuliner</option>
+                                            <option value="Dosen Pengelolaan Perhotelan">Dosen Pengelolaan Perhotelan</option>
                                         </select>
                                     </div>
                                 </div>
