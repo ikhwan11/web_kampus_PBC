@@ -329,8 +329,6 @@
                             <div class="member-info">
                                 <h4><?= $dosen['nama']; ?></h4>
                                 <span><?= $dosen['jabatan']; ?></span>
-
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                                 <div class="my-2">
                                     <a href="/dosen/dosen_detail/<?= $dosen['id_pengajar']; ?>" class="btn btn-sm more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
                                 </div>
@@ -345,7 +343,7 @@
                 <?php endforeach; ?>
 
             </div>
-
+            <a href="/dosen" class="btn more-btn mt-3">Lebih banyak <i class="fas fa-chevron-right"></i></a>
         </div>
     </section>
 

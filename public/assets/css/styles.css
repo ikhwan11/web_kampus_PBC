@@ -1017,17 +1017,17 @@ section {
   margin-left: 8px;
 }
 
-.doctors .member .member-info .more-btn {
+.doctors .more-btn {
   display: inline-block;
   background: #f0ec24;
   padding: 6px 30px 8px 30px;
   color: #381b07;
   transition: all ease-in-out 0.4s;
 }
-.doctors .member .member-info .more-btn i {
+.doctors .more-btn i {
   font-size: 10px;
 }
-.doctors .member .member-info .more-btn:hover {
+.doctors .more-btn:hover {
   color: #ffffff;
   background: #1977cc;
 }
@@ -2392,7 +2392,7 @@ section {
   font-size: 25px;
   font-weight: bold;
   position: relative;
-  color: #fff;
+  color: #f0ec24;
 }
 
 .section-title-cv h3 span {

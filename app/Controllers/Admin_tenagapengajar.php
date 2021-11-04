@@ -3,14 +3,17 @@
 namespace App\Controllers;
 
 use App\Models\Mod_dosen;
+use App\Models\Mod_pengalaman;
 
 class Admin_tenagapengajar extends BaseController
 {
 
     protected $dosenModel;
+    protected $pengalamanModel;
     public function __construct()
     {
         $this->dosenModel = new Mod_dosen();
+        $this->pengalamanModel = new Mod_pengalaman();
     }
 
 
@@ -242,5 +245,64 @@ class Admin_tenagapengajar extends BaseController
         </button>
       </div>');
         return redirect()->to('/admin_tenagapengajar');
+    }
+
+    // pengalaman section
+    public function pengalaman()
+    {
+        $data = [
+            'validation' => \Config\Services::validation(),
+        ];
+        return view('back_end/tenaga_pengajar_pengalaman', $data);
+    }
+
+    public function pengalaman_create()
+    {
+        if (!$this->validate([
+
+            'jabatan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jabatan harus diisi.'
+                ]
+            ],
+            'perusahaan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama perusahaan harus diisi.',
+                ]
+            ],
+            'tm' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tahun mulai Hp harus diisi.'
+                ]
+            ],
+            'ts' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tahun selesai email harus diisi.',
+                ]
+            ],
+        ])) {
+            return redirect()->to('/Admin_tenagapengajar/pengalaman')->withInput();
+        }
+
+        $this->pengalamanModel->save([
+            'id_pengajar' => $this->request->getVar('id_pengajar'),
+            'jabatan' => $this->request->getVar('jabatan'),
+            'perusahaan' => $this->request->getVar('perusahaan'),
+            'tahun_mulai' => $this->request->getVar('tm'),
+            'tahun_selesai' => $this->request->getVar('ts'),
+        ]);
+
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        Pengalaman berhasil ditambahkan.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+
+        return redirect()->to('/Admin_tenagapengajar/pengalaman');
     }
 }

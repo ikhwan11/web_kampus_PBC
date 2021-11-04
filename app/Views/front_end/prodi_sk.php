@@ -29,16 +29,16 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <img src="/assets/img/dosen/pak-adi.jpg" class="card-img-top" alt="...">
+                        <img src="/assets/img/dosen/<?= $dosen_data['foto']; ?>" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Adiguna Tumpuan, S.ST., M.Par</h5>
-                            <p class="card-text">Kaprodi Seni Kuiner</p>
+                            <h5 class="card-title"><?= $dosen_data['nama']; ?></h5>
+                            <p class="card-text"><?= $dosen_data['jabatan']; ?></p>
                             <div class="social-links text-center text-md-right pt-3 pt-md-0">
                                 <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
                                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
                                 <a href="#" class="Youtube"><i class="fab fa-linkedin"></i></a>
                             </div>
-                            <a href="/dosen/dosen_detail" class="btn more-btn">Selengkapnya</a>
+                            <a href="/dosen/dosen_detail/<?= $dosen_data['id_pengajar']; ?>" class="btn more-btn">Selengkapnya</a>
                         </div>
                     </div>
                 </div>

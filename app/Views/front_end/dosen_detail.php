@@ -48,38 +48,17 @@
                 <h2>Riwayat Pengalaman</h2>
             </div>
 
-            <!-- pengalaman list -->
-            <div class="row section-title-cv">
-                <div class="col-md-2">
-                    <hr size="10">
+            <?php foreach ($pengalaman_data as $pengalaman) : ?>
+                <!-- pengalaman list -->
+                <div class="row section-title-cv">
+                    <div class="col-md-2">
+                        <p class="text-right"><?= $pengalaman['tahun_mulai']; ?> - <?= $pengalaman['tahun_selesai']; ?></p>
+                    </div>
+                    <div class="col-md-10">
+                        <h3><?= $pengalaman['jabatan']; ?> <br><span class="text-white"><?= $pengalaman['perusahaan']; ?></span></h3>
+                    </div>
                 </div>
-                <div class="col-md-10">
-                    <h3>Kaprodi Perjalanan Wisata <br><span class="text-white"> Universitas Poltekparprima</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, ab pariatur quisquam aliquid ipsam beatae earum natus vero. Dolorum, minus? Aperiam incidunt, officiis aspernatur velit distinctio totam temporibus aliquid unde!</p>
-                </div>
-            </div>
-
-            <!-- pengalaman list -->
-            <div class="row section-title-cv">
-                <div class="col-md-2">
-                    <hr size="10">
-                </div>
-                <div class="col-md-10">
-                    <h3>Manager Marketing<br><span class="text-white"> Garuda Indonesia</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, ab pariatur quisquam aliquid ipsam beatae earum natus vero. Dolorum, minus? Aperiam incidunt, officiis aspernatur velit distinctio totam temporibus aliquid unde!</p>
-                </div>
-            </div>
-
-            <!-- pengalaman list -->
-            <div class="row section-title-cv">
-                <div class="col-md-2">
-                    <hr size="10">
-                </div>
-                <div class="col-md-10">
-                    <h3>Supervisor divisi pemasaran <br><span class="text-white"> PT. Traveloka Indonesia</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, ab pariatur quisquam aliquid ipsam beatae earum natus vero. Dolorum, minus? Aperiam incidunt, officiis aspernatur velit distinctio totam temporibus aliquid unde!</p>
-                </div>
-            </div>
+            <?php endforeach; ?>
 
 
         </div>

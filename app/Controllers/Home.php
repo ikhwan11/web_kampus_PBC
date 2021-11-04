@@ -14,8 +14,9 @@ class Home extends BaseController
 
     public function index()
     {
+
         $data = [
-            'dosen_data' => $this->dosenModel->findAll(),
+            'dosen_data' => $this->dosenModel->paginate(4),
         ];
         return view('front_end/home', $data);
     }

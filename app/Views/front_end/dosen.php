@@ -24,88 +24,35 @@
                 <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6">
                     <div class="d-flexpx-5">
                         <div class="search"> <input type="text" class="search-input" placeholder="Tulis nama.." name=""> <a href="#" class="btn search-icon"> <i class="fa fa-search"></i> </a> </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="dosen-member" data-aos="fade-up">
-                        <div class="dosen-member-img">
-                            <img src="/assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
+                <?php foreach ($dosen_data as $dosen) : ?>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="dosen-member" data-aos="fade-up">
+                            <div class="dosen-member-img">
+                                <img src="/assets/img/dosen/<?= $dosen['foto']; ?>" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="dosen-member-info">
+                                <h4><?= $dosen['nama']; ?></h4>
+                                <span><?= $dosen['jabatan']; ?></span><br>
+                                <a href="/dosen/dosen_detail/<?= $dosen['id_pengajar']; ?>" class="btn more-btn">Selengkapnya</a>
                             </div>
                         </div>
-                        <div class="dosen-member-info">
-                            <h4>Walter White</h4>
-                            <span>Chief Executive Officer</span><br>
-                            <a href="/dosen/dosen_detail/" class="btn more-btn">Selengkapnya</a>
-                        </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="dosen-member" data-aos="fade-up" data-aos-delay="100">
-                        <div class="dosen-member-img">
-                            <img src="/assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="dosen-member-info">
-                            <h4>Sarah Jhonson</h4>
-                            <span>Product Manager</span><br>
-                            <a href="/dosen/dosen_detail/" class="btn more-btn">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="dosen-member" data-aos="fade-up" data-aos-delay="200">
-                        <div class="dosen-member-img">
-                            <img src="/assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="dosen-member-info">
-                            <h4>William Anderson</h4>
-                            <span>CTO</span><br>
-                            <a href="/dosen/dosen_detail/" class="btn more-btn">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="dosen-member" data-aos="fade-up" data-aos-delay="300">
-                        <div class="dosen-member-img">
-                            <img src="/assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                            <div class="social">
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                        <div class="dosen-member-info">
-                            <h4>Amanda Jepson</h4>
-                            <span>Accountant</span><br>
-                            <a href="/dosen/dosen_detail/" class="btn more-btn">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-
+                <?php endforeach; ?>
             </div>
 
         </div>

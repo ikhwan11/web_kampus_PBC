@@ -9,7 +9,7 @@
             <h3 class="page-title">Kelola data tenaga pengajar (Dosen)</h3>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/admin_dashboard/">Dashboard</a></li>
+                    <li class="breadcrumb-item"><a href="/admin_dashboard">Dashboard</a></li>
                     <li class="breadcrumb-item active" aria-current="page"> Tenaga Pengajar </li>
                 </ol>
             </nav>
@@ -18,7 +18,8 @@
         <!-- data -->
         <div class="row">
             <div class="container">
-                <a href="/admin_tenagapengajar/create" class="btn btn-dark my-2"><i class="fa fa-plus"></i> Tambah Data Dosen</a>
+                <a href="/admin_tenagapengajar/create" class="btn btn-outline-dark my-2"><i class="fa fa-plus"></i> Tambah Data Dosen</a>
+                <a href="/admin_tenagapengajar/pengalaman" class="btn btn-outline-success my-2"><i class="fa fa-plus"></i> Tambah pengalaman</a>
             </div>
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
