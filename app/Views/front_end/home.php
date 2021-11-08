@@ -18,7 +18,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="text-white">Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan banyak hotel dan resort bintang 5.</p>
+                            <p class="text-white">Kampus pariwisata yang terletak di daerah strategis yaitu di dalam kawasan Bintan International Resorts dan telah berkerja sama dengan berbagai resorts ternama</p>
                         </div>
                     </div>
                     <a href="#why-us" class="btn btn-get-started scrollto">Selengkapnya <i class="bx bx-chevron-right"></i></a>
@@ -44,11 +44,11 @@
             <div class="carousel-item" style="background-image: url(/assets/img/hero_home/3.jpg)">
                 <div class="container">
                     <div class="slide-right">
-                        <h2 class="text-white">Didukung oleh <br><span>Tenaga pengajar yang berpengalaman di industri.</span></h2>
+                        <h2 class="text-white">Didukung oleh <br><span>Tenaga pengajar yang berpengalaman di bidangnya</span></h2>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="text-white">Tenaga pengajar PBC sudah berpengalaman di industri sektor pariwisata.</p>
+                            <p class="text-white">Politeknik Bintan Cakrawala didukung oleh tenaga pengajar yang ahli dan berpengalaman baik di pendidikan maupun industri.</p>
                         </div>
                     </div>
 
@@ -96,9 +96,9 @@
                             <div class="tab-pane active show" id="tab-1">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Selamat datang di website kami</h3>
-                                        <p>Sebagai pionir pendidikan tinggi di Indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik, di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi. Dengan lingkungan pembelajaran yang penuh semangat dan potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi pemimpin global yang inovatif.</p><br>
-                                        <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                        <h3>Selamat datang di Politeknik Bintan Cakrawala</h3>
+                                        <p>Sebagai pionir perguruan tingi pariwisata di indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi, menuturkan kebudayaan lokal dan mampu bersaing di dunia internasional. Dengan lingkungan pembelajaran yang penuh semangat dan asri serta potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi proffesional di bidang pariwisata yang berinovatif.</p><br>
+                                        <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="/assets/img/tentang/dir.jpg" alt="" class="img-fluid">
@@ -108,9 +108,9 @@
                             <div class="tab-pane" id="tab-2">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>PBC</h3>
-                                        <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. </p><br>
-                                        <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                        <h3>Profil Politeknik Bintan Cakrawala</h3>
+                                        <p>Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan hotel dan resort bintang 5 serta suasana alam yang indah dan asri. Politeknik Bintan Cakrawala (PBC) adalah perguruan tinggi pariwisata pertama di Kabupaten Bintan. Perguruan tinggi terapan ini didirikan oleh Yayasan Bintan Resorts untuk mempersiapkan sumber daya yang kompeten di bidang pariwisata. Lokasinya sendiri berada di Kawasan Pariwisata Lagoi, Bintan.</p><br>
+                                        <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="/assets/img/tentang/about-bg.jpg" alt="" class="img-fluid">
@@ -120,9 +120,9 @@
                             <div class="tab-pane" id="tab-3">
                                 <div class="row">
                                     <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Sejarah PBC</h3>
-                                        <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. </p><br>
-                                        <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                        <h3>Sejarah Politeknik Bintan Cakrawala</h3>
+                                        <p>Politeknik Bintan Cakrawala (PBC) adalah pendidikan tinggi kejuruan (terapan) yang didirikan oleh Yayasan Bintan Resort. Pada tahun 2010, Yayasan Bintan Resorts didirikan dan berlokasi di Kawasan Wisata Lagoi, Bapak Ir. Aditya Laksamana yang merupakan ketua dari Yayasan Bintan Resort</p><br>
+                                        <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
                                     </div>
                                     <div class="col-lg-4 text-center order-1 order-lg-2">
                                         <img src="/assets/img/tentang/sejarah.jpg" alt="" class="img-fluid">
@@ -358,74 +358,24 @@
             <div class="berita-slider swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide">
-                        <div class="berita-wrap">
-                            <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/berita.JPG" class="img img-responsive">
-                                    <div class="profile-name">
-                                        Mahasiswa PBC Mengikuti Lomba Memasak International di Singapura
-                                    </div>
-                                    <div class="profile-overview">
+                    <?php foreach ($blog_data as $blog) : ?>
+                        <div class="swiper-slide">
+                            <div class="berita-wrap">
+                                <div class="berita-item">
+                                    <div class="profile-card-6"><img src="/assets/img/blog/<?= $blog['gambar']; ?>" class="img img-responsive" width="500px">
+                                        <div class="profile-name">
+                                            <?= $blog['judul']; ?>
+                                        </div>
                                         <div class="profile-overview">
-                                            <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                            <div class="profile-overview">
+                                                <a href="/news/detail_news/<?= $blog['id_blog']; ?>" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="berita-wrap">
-                            <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/news/berita-2.JPG" class="img img-responsive">
-                                    <div class="profile-name">
-                                        Serah Terima Jabatan Direktur Politeknik Bintan Cakrawala
-                                    </div>
-                                    <div class="profile-overview">
-                                        <div class="profile-overview">
-                                            <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="berita-wrap">
-                            <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/news/berita-3.JPG" class="img img-responsive">
-                                    <div class="profile-name">
-                                        Cuaca Hari Ini Pulau Bintan Termasuk Cuaca Besok, BMKG: Waspada Potensi Hujan
-                                    </div>
-                                    <div class="profile-overview">
-                                        <div class="profile-overview">
-                                            <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="berita-wrap">
-                            <div class="berita-item">
-                                <div class="profile-card-6"><img src="/assets/img/news/berita-4.JPG" class="img img-responsive">
-                                    <div class="profile-name">
-                                        Saat Tanjungpinang Naik Jadi Level 2, Gubernur Tegaskan Kepri Masih PPKM Level 1
-                                    </div>
-                                    <div class="profile-overview">
-                                        <div class="profile-overview">
-                                            <p class="mx-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nobis fugit voluptatem ipsa inventore fuga impedit! Qui inventore suscipit non corporis perferendis nihil dignissimos eos rerum quisquam, odit ut architecto?</p><br>
-                                            <a href="/news/detail_news" class="more-btn">Selengkapnya <i class="fas fa-chevron-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
 
                 </div>
                 <div class="swiper-berita-pagination"></div>

@@ -20,80 +20,44 @@
                 <!-- Blog entries-->
                 <div class="col-lg-8">
                     <!-- Featured blog post-->
+                    <h2>Berita Teratas</h2>
+                    <hr>
                     <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="/assets/img/blog/1.jpg" class="img-fluid" alt="..." /></a>
+                        <a href="/news/detail_news/<?= $blog_terbaru['id_blog']; ?>"><img class="card-img-top" src="/assets/img/blog/<?= $blog_terbaru['gambar']; ?>" class="img-fluid" alt="..." /></a>
                         <div class="card-body">
-                            <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> Senin, 1 Januari 2021</div>
-                            <h2 class="card-title">Chef Politeknik Bintan Cakrawala Jadi Narasumber Pelatihan Kuliner di Natuna</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a class="btn more-btn" href="/news/detail_news/">Read more →</a>
+                            <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> <?= $blog_terbaru['tanggal']; ?></div>
+                            <h2 class="card-title"><?= $blog_terbaru['judul']; ?></h2>
+                            <p class="card-text"><?= $blog_terbaru['paragraf_1']; ?></p>
+                            <a class="btn more-btn" href="/news/detail_news/<?= $blog_terbaru['id_blog']; ?>">Selengkapnya →</a>
                         </div>
                     </div>
                     <!-- Nested row for non-featured blog posts-->
                     <div class="row">
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> Senin, 1 Januari 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn more-btn" href="#!">Read more →</a>
+                        <h2>Lebih banyak</h2>
+                        <hr>
+                        <?php foreach ($blog_data as $blog) : ?>
+                            <div class="col-lg-6">
+                                <!-- Blog post-->
+                                <div class="card mb-4">
+                                    <a href="/news/detail_news/<?= $blog['id_blog']; ?>"><img class="card-img-top" src="/assets/img/blog/<?= $blog['gambar']; ?>" alt="..." /></a>
+                                    <div class="card-body">
+                                        <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> <?= $blog['tanggal']; ?></div>
+                                        <h2 class="card-title h4"><?= $blog['judul']; ?></h2>
+                                        <p class="card-text"><?= $blog['paragraf_1']; ?></p>
+                                        <a class="btn more-btn" href="/news/detail_news/<?= $blog['id_blog']; ?>">Selengkapnya →</a>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> Senin, 1 Januari 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn more-btn" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> Senin, 1 Januari 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
-                                    <a class="btn more-btn" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                            <!-- Blog post-->
-                            <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
-                                <div class="card-body">
-                                    <div class="small text-muted tanggal"><i class="far fa-calendar-alt"></i> Senin, 1 Januari 2021</div>
-                                    <h2 class="card-title h4">Post Title</h2>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
-                                    <a class="btn more-btn" href="#!">Read more →</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
+
                     </div>
                     <!-- Pagination-->
-                    <nav aria-label="Pagination">
-                        <hr class="my-0" />
-                        <ul class="pagination justify-content-center my-4">
-                            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
-                            <li class="page-item active" aria-current="page"><a class="page-link" href="#!">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                            <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">15</a></li>
-                            <li class="page-item"><a class="page-link" href="#!">Older</a></li>
-                        </ul>
-                    </nav>
+                    <?= $pager->links('tb_blog', 'admin_pagination'); ?>
                 </div>
                 <!-- Side widgets-->
                 <div class="col-lg-4">
                     <!-- Search widget-->
-                    <div class="card mb-4">
+                    <!-- <div class="card mb-4">
                         <div class="card-header">Temukan Berita</div>
                         <div class="card-body">
                             <div class="input-group">
@@ -101,7 +65,7 @@
                                 <button class="btn more-btn" id="button-search" type="button">Go!</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Categories widget-->
                     <div class="card mb-4">
                         <div class="card-header">Categories</div>
@@ -109,16 +73,20 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Web Design</a></li>
-                                        <li><a href="#!">HTML</a></li>
-                                        <li><a href="#!">Freebies</a></li>
+                                        <li><a href="#!">Mahasiswa</a></li>
+                                        <li><a href="#!">Event</a></li>
+                                        <li><a href="#!">Wisata</a></li>
+                                        <li><a href="#!">Kuliner</a></li>
+                                        <li><a href="#!">Perhotelan</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">JavaScript</a></li>
-                                        <li><a href="#!">CSS</a></li>
-                                        <li><a href="#!">Tutorials</a></li>
+                                        <li><a href="#!">Prodi</a></li>
+                                        <li><a href="#!">Berita</a></li>
+                                        <li><a href="#!">Prestasi</a></li>
+                                        <li><a href="#!">Olahraga</a></li>
+                                        <li><a href="#!">Fotografi</a></li>
                                     </ul>
                                 </div>
                             </div>

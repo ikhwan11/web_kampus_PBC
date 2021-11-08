@@ -60,8 +60,8 @@
 						<h4>Useful Links</h4>
 						<ul>
 							<li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#about">Tentang PBC</a></li>
-							<li><i class="bx bx-chevron-right"></i> <a href="#doctors">Dosen</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="/about">Tentang PBC</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="/dosen">Dosen</a></li>
 
 						</ul>
 					</div>
@@ -78,7 +78,7 @@
 					<div class="col-lg-4 col-md-6 footer-newsletter">
 						<h4>YouTube</h4>
 						<p>Temukan kami di YouTube:</p>
-
+						<span class="text-danger">API youtube?</span>
 					</div>
 
 				</div>

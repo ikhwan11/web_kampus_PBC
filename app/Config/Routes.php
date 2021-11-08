@@ -35,7 +35,9 @@ $routes->get('/', 'Home::index');
 
 $routes->delete('/admin_user/(:num)', 'Admin_user::delete/$1');
 $routes->delete('/admin_tenagapengajar/(:num)', 'Admin_tenagapengajar::delete/$1');
+$routes->delete('/admin_blog/(:num)', 'Admin_blog::delete/$1');
 
+// $routes->get('/admin_blog/:(num)', 'Admin_blog::edit_act/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

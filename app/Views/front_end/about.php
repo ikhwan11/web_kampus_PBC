@@ -31,7 +31,7 @@
                     <!-- <h1></h1> -->
                     <h3>Selamat Datang Di Politeknik Bintan Cakrawala</h3>
                     <p>
-                        Sebagai pionir pendidikan tinggi di Indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik, di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi. Dengan lingkungan pembelajaran yang penuh semangat dan potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi pemimpin global yang inovatif.
+                        Sebagai pionir perguruan tingi pariwisata di indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi, menuturkan kebudayaan lokal dan mampu bersaing di dunia internasional. Dengan lingkungan pembelajaran yang penuh semangat dan asri serta potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi proffesional di bidang pariwisata yang berinovatif.
                     </p>
                     <p>
                         Kami juga terus aktif menjalin berbagai program kolaborasi di bidang pendidikan dan pengajaran, penelitian, pengabdian kepada masyarakat. Jejaring kemitraan global PBC telah membuka ruang kesempatan yang luas untuk mewujudkan berbagai gagasan, aksi, dan kontribusi yang bermanfaat bagi lingkungan dan masyarakat luas.

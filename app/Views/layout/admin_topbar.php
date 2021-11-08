@@ -31,7 +31,7 @@
             <ul class="navbar-nav navbar-nav-right ml-lg-auto">
                 <li class="nav-item nav-profile dropdown border-0">
                     <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown">
-                        <span class="profile-name">Admin PBC</span>
+                        <span class="profile-name"><?= (session()->get('role') == 1) ? 'Adminstrator' : 'Digital Marketing'; ?></span>
                     </a>
                     <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
                         <a class="dropdown-item" href="/auth/logout_act">

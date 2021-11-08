@@ -23,4 +23,12 @@ class Mod_user extends Model
 
         return $this->where(['id' => $id])->first();
     }
+
+    public function login($username, $tbl)
+    {
+        $builder = $this->db->table($tbl);
+        $builder->where('username', $username);
+        $log = $builder->get()->getRow();
+        return $log;
+    }
 }

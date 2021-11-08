@@ -211,7 +211,7 @@ class Admin_tenagapengajar extends BaseController
 
         // hapus file
         $dosen = $this->dosenModel->find($id);
-        unlink('/assets/img/dosen/' . $dosen['foto']);
+        unlink('assets/img/dosen/' . $dosen['foto']);
 
         $this->dosenModel->delete($id);
 
