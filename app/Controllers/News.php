@@ -14,8 +14,9 @@ class News extends BaseController
 
     public function index()
     {
+        $this->blogModel->orderBy('id_blog', 'DESC');
         $data = [
-            'blog_data' => $this->blogModel->paginate(4, 'tb_blog'),
+            'blog_data' => $this->blogModel->paginate(2, 'tb_blog'),
             'blog_terbaru' => $this->blogModel->berita_terbaru(),
             'pager' => $this->blogModel->pager,
         ];

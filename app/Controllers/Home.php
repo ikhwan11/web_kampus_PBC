@@ -17,10 +17,10 @@ class Home extends BaseController
 
     public function index()
     {
-
+        $this->blogModel->orderBy('id_blog', 'DESC');
         $data = [
             'dosen_data' => $this->dosenModel->paginate(4),
-            'blog_data' => $this->blogModel->paginate(8),
+            'blog_data' => $this->blogModel->paginate(6),
         ];
         return view('front_end/home', $data);
     }

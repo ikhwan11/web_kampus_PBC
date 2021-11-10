@@ -32,12 +32,14 @@
                     </ul>
                 </div>
             </li> -->
-            <li class="nav-item">
-                <a class="nav-link" href="/admin_tenagapengajar">
-                    <i class="mdi mdi-account-card-details menu-icon"></i>
-                    <span class="menu-title">Tenaga Pengajar</span>
-                </a>
-            </li>
+            <?php if (session()->get('role') == 1) : ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin_tenagapengajar">
+                        <i class="mdi mdi-account-card-details menu-icon"></i>
+                        <span class="menu-title">Tenaga Pengajar</span>
+                    </a>
+                </li>
+            <?php endif; ?>
             <li class="nav-item">
                 <a class="nav-link" href="/admin_blog">
                     <i class="mdi mdi-newspaper menu-icon"></i>

@@ -23,15 +23,15 @@
         <div class="wrapper">
             <div class="icon facebook">
                 <div class="tooltip">Facebook</div>
-                <span><a href="" class="text-white"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a href="https://web.facebook.com/Politeknik-Bintan-Cakrawala-255002312094582" class="text-white"><i class="fab fa-facebook-f"></i></a></span>
             </div>
             <div class="icon instagram">
                 <div class="tooltip">Instagram</div>
-                <span><a href="" class="text-white"><i class="fab fa-instagram"></i></a></span>
+                <span><a href="https://www.instagram.com/poltekbintancakrawala/" class="text-white"><i class="fab fa-instagram"></i></a></span>
             </div>
             <div class="icon youtube">
                 <div class="tooltip">Youtube</div>
-                <span><a href="" class="text-white"><i class="fab fa-youtube"></i></a></span>
+                <span><a href="https://www.youtube.com/channel/UC_bL4XnZUjhdaRh9AGte3bw" class="text-white"><i class="fab fa-youtube"></i></a></span>
             </div>
 
         </div>
@@ -73,7 +73,7 @@
                             <li><a href="">SIAKAD</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="/news">PBC News</a></li>
+                    <li><a class="nav-link scrollto" href="/news">Blog</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>

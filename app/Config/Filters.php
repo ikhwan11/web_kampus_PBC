@@ -6,6 +6,7 @@ use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
+use App\Filters\Login_filters;
 
 class Filters extends BaseConfig
 {
@@ -19,6 +20,7 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
+        'isLoggedIn' => Login_filters::class,
     ];
 
     /**
@@ -58,5 +60,18 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'isLoggedIn' => [
+            'before' => [
+                'Admin_dashboard',
+                'Admin_tenagapengajar',
+                'Admin_tenagapengajar/*',
+                'Admin_user',
+                'Admin_user/*',
+                'Admin_blog',
+                'Admin_blog/*',
+                'Admin_banner'
+            ],
+        ]
+    ];
 }

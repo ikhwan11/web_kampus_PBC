@@ -8,6 +8,9 @@ class Auth extends BaseController
 {
   public function login()
   {
+    if (session('nama')) {
+      return redirect()->to('/admin_dashboard');
+    }
     return view('back_end/login');
   }
 

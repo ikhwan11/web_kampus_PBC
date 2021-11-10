@@ -38,6 +38,15 @@
 	<?= $this->include('layout/navbar'); ?>
 	<?= $this->renderSection('content'); ?>
 
+	<!-- bagian popup -->
+	<div class="popup">
+		<div id="box">
+			<a class="close" href="#">&times;</a>
+			<img src="/assets/img/banner-pmb-website.png" class="img-fluid" alt="">
+		</div>
+	</div>
+	<!-- akhir dari popup -->
+
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
 
@@ -93,10 +102,9 @@
 				</div>
 			</div>
 			<div class="social-links text-center text-md-right pt-3 pt-md-0">
-				<a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-				<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-				<a href="#" class="Youtube"><i class="fab fa-youtube"></i></a>
-				<a href="#" class="E-mail"><i class="fas fa-envelope"></i></a>
+				<a href="https://web.facebook.com/Politeknik-Bintan-Cakrawala-255002312094582" class="facebook"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/poltekbintancakrawala/" class="instagram"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UC_bL4XnZUjhdaRh9AGte3bw" class="Youtube"><i class="fab fa-youtube"></i></a>
 			</div>
 		</div>
 	</footer><!-- End Footer -->
@@ -112,6 +120,16 @@
 
 	<!-- Template Main JS File -->
 	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a.close').click(function(eve) {
+
+				eve.preventDefault();
+				$(this).parents('div.popup').fadeOut('slow');
+			});
+		});
+	</script>
 
 </body>
 

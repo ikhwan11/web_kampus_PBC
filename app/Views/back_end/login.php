@@ -37,7 +37,7 @@
                                             <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
                                         </div>
                                         <button type="submit" class="btn btn-primary" name="submit">Login</button>
-                                        <button type="button" href="/" class="btn btn-warning">Cancel</button>
+                                        <a type="button" href="/" class="btn btn-warning">Cancel</a>
                                     </form>
 
                                 </div>

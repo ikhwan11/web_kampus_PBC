@@ -14,6 +14,7 @@ class Admin_blog extends BaseController
     }
     public function index()
     {
+        $this->blogModel->orderBy('id_blog', 'DESC');
         $currentPage = $this->request->getVar('page_tb_blog') ? $this->request->getVar('page_tb_blog') : 1;
         $data = [
             'blog_data' => $this->blogModel->paginate(5, 'tb_blog'),

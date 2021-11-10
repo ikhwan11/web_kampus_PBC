@@ -36,4 +36,11 @@ class Mod_blog extends Model
             ->limit(1)
             ->first();
     }
+
+    public function tampil_berita()
+    {
+        return $this->table('tb_blog')
+            ->orderBy('created_at', 'DESC')
+            ->first();
+    }
 }

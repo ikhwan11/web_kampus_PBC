@@ -14,9 +14,11 @@
                     </strong>
                 </span>
             </h3>
-            <div class="d-flex">
-                <a href="/admin_user" class="btn btn-sm ml-3 btn-success">Kelola User</a>
-            </div>
+            <?php if (session()->get('role') == '1') : ?>
+                <div class="d-flex">
+                    <a href="/admin_user" class="btn btn-sm ml-3 btn-success">Kelola User</a>
+                </div>
+            <?php endif; ?>
         </div>
         <div class="row">
             <div class="col-xl-3 col-lg-12 stretch-card grid-margin">
