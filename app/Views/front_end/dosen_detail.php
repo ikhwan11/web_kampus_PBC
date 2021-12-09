@@ -24,9 +24,9 @@
                     <table class="table table-borderless">
                         <tbody>
                             <tr>
-                                <th scope="row">Tempat/Tanggal Lahir</th>
+                                <th scope="row">Alamat Asal</th>
                                 <td>:</td>
-                                <td><?= $dosen_data['tempat_lahir']; ?>/<?= $dosen_data['tanggal_lahir']; ?></td>
+                                <td><?= $dosen_data['tempat_lahir']; ?></td>
                             </tr>
                             <tr>
                                 <th scope="row">Jabatan</th>

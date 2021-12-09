@@ -6,48 +6,97 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Login</title>
-    <link rel="stylesheet" href="/assets/admin/vendors/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="/assets/admin/vendors/flag-icon-css/css/flag-icon.min.css" />
-    <link rel="stylesheet" href="/assets/admin/vendors/css/vendor.bundle.base.css" />
-    <link rel="stylesheet" href="/assets/admin/vendors/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/assets/admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" href="/assets/admin/css/style.css" />
-    <link rel="stylesheet" href="/assets/admin/css/login_style.css" />
-    <link rel="shortcut icon" href="/assets/img/icon_pbc.png" />
+
+    <link href="/assets/login/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="/assets/login/login.css" rel="stylesheet" id="bootstrap-css">
+
+    <style>
+        input[type=password] {
+
+            background-color: #f6f6f6;
+
+            border: none;
+
+            color: #0d0d0d;
+
+            padding: 15px 32px;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            display: inline-block;
+
+            font-size: 16px;
+
+            margin: 5px;
+
+            width: 85%;
+
+            border: 2px solid #f6f6f6;
+
+            -webkit-transition: all 0.5s ease-in-out;
+
+            -moz-transition: all 0.5s ease-in-out;
+
+            -ms-transition: all 0.5s ease-in-out;
+
+            -o-transition: all 0.5s ease-in-out;
+
+            transition: all 0.5s ease-in-out;
+
+            -webkit-border-radius: 5px 5px 5px 5px;
+
+            border-radius: 5px 5px 5px 5px;
+
+        }
+
+        input[type=password]:focus {
+
+            background-color: #fff;
+
+            border-bottom: 2px solid #5fbae9;
+
+        }
+
+        input[type=password]:placeholder {
+
+            color: #cccccc;
+
+        }
+    </style>
 </head>
+
 
 <body>
 
-    <section class="body">
-        <div class="container-scroller">
-            <div class="container-fluid page-body-wrapper">
-                <div class="main-panel">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title text-center">Login Form</h4>
-                                    <form action="/auth/login_act" method="POST">
-                                        <?= session()->get('pesan'); ?>
-                                        <?= csrf_field(); ?>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Username" name="username" id="username" autofocus autocomplete="off" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password" name="password" id="password" />
-                                        </div>
-                                        <button type="submit" class="btn btn-primary" name="submit">Login</button>
-                                        <a type="button" href="/" class="btn btn-warning">Cancel</a>
-                                    </form>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="/assets/img/icon_pbc.png" width="100px" id="icon" />
             </div>
+
+            <!-- Login Form -->
+            <form action="/auth/login_act" method="POST">
+                <?= session()->get('pesan'); ?>
+                <?= csrf_field(); ?>
+                <input type="text" name="username" class="fadeIn second" name="username" placeholder="Username">
+                <input type="password" name="password" class="fadeIn third" placeholder="Password">
+                <input type="submit" class="fadeIn fourth" value="Log In">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <p>Login previlege</p>
+            </div>
+
         </div>
-    </section>
+    </div>
+
+
 
 
     </div>
@@ -56,27 +105,9 @@
     <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="/assets/admin/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="/assets/admin/vendors/chart.js/Chart.min.js"></script>
-    <script src="/assets/admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="/assets/admin/vendors/flot/jquery.flot.js"></script>
-    <script src="/assets/admin/vendors/flot/jquery.flot.resize.js"></script>
-    <script src="/assets/admin/vendors/flot/jquery.flot.categories.js"></script>
-    <script src="/assets/admin/vendors/flot/jquery.flot.fillbetween.js"></script>
-    <script src="/assets/admin/vendors/flot/jquery.flot.stack.js"></script>
-    <script src="/assets/admin/vendors/flot/jquery.flot.pie.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="/assets/admin/js/off-canvas.js"></script>
-    <script src="/assets/admin/js/hoverable-collapse.js"></script>
-    <script src="/assets/admin/js/misc.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="/assets/admin/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
+
+    <script src="/assets/login//bootstrap.min.js"></script>
+    <script src="/assets/login//jquery.min.js"></script>
 </body>
 
 </html>

@@ -42,7 +42,7 @@
         <label for="">Login</label>
         <div class="wrapper">
             <div class="icon admin">
-                <div class="tooltip">Admin</div>
+                <div class="tooltip">Login</div>
                 <span><a href="/auth/login" class="text-white"><i class="fas fa-user"></i></a></span>
             </div>
         </div>
@@ -58,7 +58,14 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="nav-link scrollto " href="/">Beranda</a></li>
-                    <li><a class="nav-link scrollto" href="/about">Tentang Kami</a></li>
+                    <li class="dropdown"><a><span>Tentang Kami</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="/About">Tentang</a></li>
+                            <li><a href="/kerjasama">Kerjasama Kami</a></li>
+                            <li><a href="/dosen">Tenaga Pengajar (Dosen)</a></li>
+                            <li><a href="/lapTahunan">Laporan tahunan</a></li>
+                        </ul>
+                    </li>
                     <li class="dropdown"><a><span>Program Studi</span> <i class="fas fa-chevron-down"></i></a>
                         <ul>
                             <li><a href="/Prodi/pp">D4 Pengelolaan Perhotelan</a></li>
@@ -68,9 +75,27 @@
                     </li>
                     <li class="dropdown"><a><span>Akademik</span> <i class="fas fa-chevron-down"></i></a>
                         <ul>
-                            <li><a href="/dosen">Tenaga Pengajar</a></li>
-                            <li><a href="/kerjasama">Kerjasama Kami</a></li>
-                            <li><a href="">SIAKAD</a></li>
+                            <li><a href="http://e-learning.pbcakrawala.ac.id">E-Learning</a></li>
+                            <li><a href="http://siakad.pbc.ac.id">SIAKAD</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a><span>Pendaftaran</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Beasiswa</a></li>
+                            <li><a href="http://siakad.pbc.ac.id/index.php?m=pmb.umum.periode">Mahasiswa baru</a></li>
+                            <li><a href="http://skl.pbc.ac.id">Hasil seleksi</a></li>
+                            <li><a href="http://pmb.pbc.ac.id">Tes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a><span>SISFO</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Beasiswa</a></li>
+                            <li><a href="#">Sister</a></li>
+                            <li><a href="http://feeder.pbc.ac.id">Feeder</a></li>
+                            <li><a href="http://gdriveku.pbc.ac.id">Gdriveku</a></li>
+                            <li><a href="http://pak.lldikti10.id">PAK</a></li>
+                            <li><a href="http://pddikti.kemdikbud.go.id">PDDIKTI</a></li>
+                            <li><a href="http://eoffice.lldikti10.id">E-Office</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="/news">Blog</a></li>

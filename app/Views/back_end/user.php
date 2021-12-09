@@ -47,8 +47,10 @@
                                             <td><?= $user['username']; ?></td>
                                             <?php if ($user['role'] == 1) { ?>
                                                 <td>Adminstrator</td>
-                                            <?php } else { ?>
+                                            <?php } elseif ($user['role'] == 2) { ?>
                                                 <td>Digital Marketing</td>
+                                            <?php } else { ?>
+                                                <td>Staff</td>
                                             <?php } ?>
                                             <td>
                                                 <a href="/admin_user/detail/<?= $user['id']; ?>" class="btn btn-sm btn-warning">Detail</a>

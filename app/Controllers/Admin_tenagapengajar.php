@@ -233,6 +233,7 @@ class Admin_tenagapengajar extends BaseController
         } else {
             $namaFoto = $fileFoto->getName();
             $fileFoto->move('assets/img/dosen');
+            unlink('assets/img/dosen' . $this->request->getVar('foto'));
         }
         $this->dosenModel->save([
             'id_pengajar' => $id,

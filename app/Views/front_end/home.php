@@ -70,66 +70,65 @@
             <div class="section-title">
                 <h2>Tentang Kami</h2>
             </div>
-            <div class="jumbotron">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <ul class="nav nav-tabs flex-column tombol">
-                            <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Sambutan Direktur</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Profil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Sejarah</a>
-                                <!-- </li>
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul class="nav nav-tabs flex-column tombol">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Sambutan Direktur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Sejarah</a>
+                            <!-- </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Visi dan Misi</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Fasilitas</a>
                             </li> -->
-                        </ul>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="tab-content">
-                            <div class="tab-pane active show" id="tab-1">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Selamat datang di Politeknik Bintan Cakrawala</h3>
-                                        <p>Sebagai pionir perguruan tingi pariwisata di indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi, menuturkan kebudayaan lokal dan mampu bersaing di dunia internasional. Dengan lingkungan pembelajaran yang penuh semangat dan asri serta potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi proffesional di bidang pariwisata yang berinovatif.</p><br>
-                                        <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="/assets/img/tentang/dir.jpg" alt="" class="img-fluid">
-                                    </div>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="tab-1">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Selamat datang di Politeknik Bintan Cakrawala</h3>
+                                    <p>Sebagai pionir perguruan tingi pariwisata di indonesia, PBC memiliki akar yang kuat dalam tradisi kebebasan akademik di mana keberagaman pemikiran mendapatkan ruang apresiasi yang tinggi, menuturkan kebudayaan lokal dan mampu bersaing di dunia internasional. Dengan lingkungan pembelajaran yang penuh semangat dan asri serta potensi dalam inovasi, kami berkomitmen dalam mendidik mahasiswa kami menjadi proffesional di bidang pariwisata yang berinovatif.</p><br>
+                                    <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="/assets/img/tentang/dir.jpg" alt="" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="tab-pane" id="tab-2">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Profil Politeknik Bintan Cakrawala</h3>
-                                        <p>Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan hotel dan resort bintang 5 serta suasana alam yang indah dan asri. Politeknik Bintan Cakrawala (PBC) adalah perguruan tinggi pariwisata pertama di Kabupaten Bintan. Perguruan tinggi terapan ini didirikan oleh Yayasan Bintan Resorts untuk mempersiapkan sumber daya yang kompeten di bidang pariwisata. Lokasinya sendiri berada di Kawasan Pariwisata Lagoi, Bintan.</p><br>
-                                        <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="/assets/img/tentang/about-bg.jpg" alt="" class="img-fluid">
-                                    </div>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Profil Politeknik Bintan Cakrawala</h3>
+                                    <p>Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan hotel dan resort bintang 5 serta suasana alam yang indah dan asri. Politeknik Bintan Cakrawala (PBC) adalah perguruan tinggi pariwisata pertama di Kabupaten Bintan. Perguruan tinggi terapan ini didirikan oleh Yayasan Bintan Resorts untuk mempersiapkan sumber daya yang kompeten di bidang pariwisata. Lokasinya sendiri berada di Kawasan Pariwisata Lagoi, Bintan.</p><br>
+                                    <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="/assets/img/tentang/about-bg.jpg" alt="" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="tab-pane" id="tab-3">
-                                <div class="row">
-                                    <div class="col-lg-8 details order-2 order-lg-1">
-                                        <h3>Sejarah Politeknik Bintan Cakrawala</h3>
-                                        <p>Politeknik Bintan Cakrawala (PBC) adalah pendidikan tinggi kejuruan (terapan) yang didirikan oleh Yayasan Bintan Resort. Pada tahun 2010, Yayasan Bintan Resorts didirikan dan berlokasi di Kawasan Wisata Lagoi, Bapak Ir. Aditya Laksamana yang merupakan ketua dari Yayasan Bintan Resort</p><br>
-                                        <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
-                                    </div>
-                                    <div class="col-lg-4 text-center order-1 order-lg-2">
-                                        <img src="/assets/img/tentang/sejarah.jpg" alt="" class="img-fluid">
-                                    </div>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <div class="row">
+                                <div class="col-lg-8 details order-2 order-lg-1">
+                                    <h3>Sejarah Politeknik Bintan Cakrawala</h3>
+                                    <p>Politeknik Bintan Cakrawala (PBC) adalah pendidikan tinggi kejuruan (terapan) yang didirikan oleh Yayasan Bintan Resort. Pada tahun 2010, Yayasan Bintan Resorts didirikan dan berlokasi di Kawasan Wisata Lagoi, Bapak Ir. Aditya Laksamana yang merupakan ketua dari Yayasan Bintan Resort</p><br>
+                                    <a href="/about" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="/assets/img/tentang/sejarah.jpg" alt="" class="img-fluid">
                                 </div>
                             </div>
-                            <!-- <div class="tab-pane" id="tab-4">
+                        </div>
+                        <!-- <div class="tab-pane" id="tab-4">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h4>Visi</h4>
@@ -163,7 +162,7 @@
                                 <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right"></i></a>
 
                             </div> -->
-                            <!-- <div class="tab-pane" id="tab-5">
+                        <!-- <div class="tab-pane" id="tab-5">
 
                                 <h3>Fasilitas PBC</h3>
                                 <div class="row">
@@ -228,10 +227,9 @@
                                 <a href="/about/" class="btn btn-sm btn-more">Selengkapnya <i class="bx bx-chevron-right mb-3"></i></a>
 
                             </div> -->
-                        </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
 
@@ -393,8 +391,8 @@
                 </div>
                 <div class="col-md-4 flyer-kanan">
                     <h3>PMB Tahun Akademik 2022/2023</h3><br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, natus. Itaque, reiciendis error magnam voluptatum temporibus dolorum quas libero odio voluptas ad provident. Eum autem voluptate veritatis repellendus molestiae error.</p>
-                    <a href="" class="more-btn my-3">Tahap Mendaftar PBC <i class="fas fa-chevron-right"></i></a>
+                    <p>Telah dibuka pendaftaran mahasiswa baru gelombang pertama, daftar sekarang dan jadilah bagian dari Politeknik Bintan Cakrawala untuk memajukan bangsa disektor pariwisata serta menjadi profesional di bidang pariwisata.</p>
+                    <!-- <a href="" class="more-btn my-3">Tahap Mendaftar PBC <i class="fas fa-chevron-right"></i></a> -->
                     <a href="https://s.id/pmbpbc" class="more-btn">Daftar Sekarang <i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
@@ -402,7 +400,7 @@
     </section>
 
     <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
+    <!-- <section id="counts" class="counts">
         <div class="container">
 
             <div class="section-title">
@@ -446,7 +444,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
     <!-- ======= partner Section ======= -->
     <section id="partner" class="partner">
@@ -725,7 +723,7 @@
 
             <div class="section-title">
                 <h2>Politeknik Bintan Cakrawala</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>Kampus pariwisata yang terletak di daerah strategis yaitu di kawasan Bintan Resort International berdekatan dengan hotel dan resort bintang 5 serta suasana alam yang indah dan asri.</p>
             </div>
         </div>
 

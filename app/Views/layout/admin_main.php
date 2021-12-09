@@ -59,7 +59,7 @@
     <script>
         function previewImg() {
             const foto = document.querySelector('#foto');
-            const fotoLabel = document.querySelector('.custom-file-label');
+            const fotoLabel = document.querySelector('.foto-label');
             const imgPreview = document.querySelector('.img-preview');
 
             fotoLabel.textContent = foto.files[0].name;
@@ -72,10 +72,9 @@
             }
         }
 
-        function previewBanner() {
-            const foto = document.querySelector('#banner');
-            const fotoLabel = document.querySelector('.custom-file-label');
-            const imgPreview = document.querySelector('.img-preview');
+        function previewDoc() {
+            const foto = document.querySelector('#dokumen');
+            const fotoLabel = document.querySelector('.dokumen-label');
 
             fotoLabel.textContent = foto.files[0].name;
 

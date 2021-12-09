@@ -24,12 +24,8 @@ class Auth extends BaseController
     $row = $model->login($username, $table);
 
     if ($row == NULL) {
-      session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-            Masukan Username dan Password
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>');
+      session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Username atau Password salah
+    </div>');
       return redirect()->to('/auth/login');
     }
 
@@ -43,12 +39,8 @@ class Auth extends BaseController
       session()->set($data);
       return redirect()->to('/admin_dashboard');
     } else {
-      session()->setFlashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-            Username atau Password yang anda masukan salah.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>');
+      session()->setFlashdata('pesan', '<div class="alert alert-danger" role="alert">Username atau Password salah
+      </div>');
       return redirect()->to('/auth/login');
     }
   }

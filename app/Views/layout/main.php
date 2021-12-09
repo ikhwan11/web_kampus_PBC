@@ -39,12 +39,12 @@
 	<?= $this->renderSection('content'); ?>
 
 	<!-- bagian popup -->
-	<div class="popup">
+	<!-- <div class="popup">
 		<div id="box">
 			<a class="close" href="#">&times;</a>
 			<img src="/assets/img/banner-pmb-website.png" class="img-fluid" alt="">
 		</div>
-	</div>
+	</div> -->
 	<!-- akhir dari popup -->
 
 	<!-- ======= Footer ======= -->

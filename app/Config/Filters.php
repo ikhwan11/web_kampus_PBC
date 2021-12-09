@@ -70,7 +70,11 @@ class Filters extends BaseConfig
                 'Admin_user/*',
                 'Admin_blog',
                 'Admin_blog/*',
-                'Admin_banner'
+                'Admin_banner',
+                'Admin_lapTahunan',
+                'Admin_lapTahunan/*',
+                'Admin_spmi',
+                'Admin_spmi/*',
             ],
         ]
     ];

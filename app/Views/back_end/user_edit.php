@@ -34,14 +34,26 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <p class="text-warning">Role sekarang : <?= ($user_data['role'] == 1) ? 'Adminstrator' : 'Digital Marketing'; ?></p><br>
                                 <div class="form-group row">
 
-                                    <label for="role" class="col-sm-3 col-form-label">Role baru</label>
+                                    <label for="role" class="col-sm-3 col-form-label">Role</label>
                                     <div class="col-sm-9">
                                         <select class="form-control" name="role">
-                                            <option value="1">Adminstrator</option>
-                                            <option value="2">Digital Marketing</option>
+
+                                            <?php if ($user_data['role'] == 1) { ?>
+                                                <option value="1">Adminstrator</option>
+                                                <option value="2">Digital Marketing</option>
+                                                <option value="3">Staff</option>
+                                            <?php } elseif ($user_data['role'] == 2) { ?>
+                                                <option value="2">Digital Marketing</option>
+                                                <option value="1">Adminstrator</option>
+                                                <option value="3">Staff</option>
+                                            <?php } else { ?>
+                                                <option value="3">Staff</option>
+                                                <option value="1">Adminstrator</option>
+                                                <option value="2">Digital Marketing</option>
+                                            <?php } ?>
+
                                         </select>
                                     </div>
                                 </div>

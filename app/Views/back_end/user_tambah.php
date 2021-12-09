@@ -39,6 +39,7 @@
                                         <select class="form-control" name="role">
                                             <option value="1">Adminstrator</option>
                                             <option value="2">Digital Marketing</option>
+                                            <option value="3">staff</option>
                                         </select>
                                     </div>
                                 </div>

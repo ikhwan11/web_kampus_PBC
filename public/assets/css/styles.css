@@ -148,7 +148,7 @@ section {
   height: 40px;
   font-size: small;
   font-weight: 100;
-  z-index: 996;
+  z-index: 800;
   transition: all 0.5s;
 }
 #topbar.topbar-scrolled {
@@ -2371,7 +2371,7 @@ section {
 /* cv */
 
 #cv {
-  background: #1977cc;
+  background: #cc7919;
 }
 
 .section-title-cv {
