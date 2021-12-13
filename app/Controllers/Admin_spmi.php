@@ -18,7 +18,6 @@ class Admin_spmi extends BaseController
     {
         $db = db_connect();
         $data = [
-            'formulir_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Formulir' ORDER BY id_dk DESC")->getResultArray(),
             'kebijakan_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Kebijakan Mutu' ORDER BY id_dk DESC")->getResultArray(),
             'manual_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Manual Mutu' ORDER BY id_dk DESC")->getResultArray(),
             'standar_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Standar Mutu' ORDER BY id_dk DESC")->getResultArray(),
@@ -33,6 +32,15 @@ class Admin_spmi extends BaseController
             'sop_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'SOP' ORDER BY id_dk DESC")->getResultArray(),
         ];
         return view('back_end/spmi_sop', $data);
+    }
+
+    public function formulir_menu()
+    {
+        $db = db_connect();
+        $data = [
+            'formulir_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Formulir' ORDER BY id_dk DESC")->getResultArray(),
+        ];
+        return view('back_end/spmi_formulir', $data);
     }
 
 

@@ -78,9 +78,7 @@
                             <div class="color-card">
                                 <h4>Formulir</h4>
                             </div>
-                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalFormulir">
-                                <i class="mdi mdi-download "></i> Download
-                            </button>
+                            <a href="/admin_spmi/formulir_menu" class="btn btn-dark"><i class="mdi mdi-download "></i> Download</a>
                         </div>
                     </div>
                 </div>
@@ -144,21 +142,4 @@
     </div>
 </div>
 
-<div class="modal fade" id="modalFormulir" tabindex="-1" role="dialog" aria-labelledby="modalFormulirLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalFormulirLabel">Download Formulir</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <?php foreach ($formulir_data as $formulir) : ?>
-                    <a href="/admin_spmi/download_dokumen/<?= $formulir['id_dk']; ?>"> <?= $formulir['nama_dk']; ?></a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-</div>
 <?= $this->endSection(); ?>
