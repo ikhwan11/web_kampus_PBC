@@ -59,7 +59,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <ul>
+                    <?php foreach ($monev1920_data as $m1920) : ?>
+                        <li><a href="/admin_spmi/download_dokumen/<?= $m1920['id_dk']; ?>"><?= $m1920['nama_dk']; ?></a><br></li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
     </div>
@@ -75,7 +79,13 @@
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <ul>
+                    <?php foreach ($monev2021_data as $m2021) : ?>
+                        <li>
+                            <a href="/admin_spmi/download_dokumen/<?= $m2021['id_dk']; ?>"><?= $m2021['nama_dk']; ?></a><br>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
     </div>

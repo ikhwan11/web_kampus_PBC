@@ -13,13 +13,11 @@ class Admin_spmi extends BaseController
     }
 
     // standar mutu
-    // ----- kebijakan mutu
 
     public function standar_mutu()
     {
         $db = db_connect();
         $data = [
-            'sop_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'SOP' ORDER BY id_dk DESC")->getResultArray(),
             'formulir_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Formulir' ORDER BY id_dk DESC")->getResultArray(),
             'kebijakan_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Kebijakan Mutu' ORDER BY id_dk DESC")->getResultArray(),
             'manual_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'Manual Mutu' ORDER BY id_dk DESC")->getResultArray(),
@@ -28,12 +26,26 @@ class Admin_spmi extends BaseController
         return view('back_end/spmi_standarMutu', $data);
     }
 
+    public function sop_menu()
+    {
+        $db = db_connect();
+        $data = [
+            'sop_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'SOP' ORDER BY id_dk DESC")->getResultArray(),
+        ];
+        return view('back_end/spmi_sop', $data);
+    }
+
 
     // laporan MONEV
 
     public function lap_monev()
     {
-        return view('back_end/spmi_lapMonev');
+        $db = db_connect();
+        $data = [
+            'monev1920_data' => $db->query("SELECT * FROM tb_dokumen WHERE id_spmi = '2' AND tahun_akademik = '2019/2020'")->getResultArray(),
+            'monev2021_data' => $db->query("SELECT * FROM tb_dokumen WHERE id_spmi = '2' AND tahun_akademik = '2020/2021'")->getResultArray(),
+        ];
+        return view('back_end/spmi_lapMonev', $data);
     }
 
     // laporan AMI

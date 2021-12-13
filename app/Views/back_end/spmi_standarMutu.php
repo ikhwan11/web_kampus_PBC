@@ -51,9 +51,7 @@
                             <div class="color-card">
                                 <h4>SOP</h4>
                             </div>
-                            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalSOP">
-                                <i class="mdi mdi-download "></i> Download
-                            </button>
+                            <a href="/admin_spmi/sop_menu" class="btn btn-dark"><i class="mdi mdi-download "></i> Download</a>
                         </div>
                     </div>
                 </div>
@@ -140,24 +138,6 @@
             <div class="modal-body">
                 <?php foreach ($manual_data as $manual) : ?>
                     <a href="/admin_spmi/download_dokumen/<?= $manual['id_dk']; ?>"> <?= $manual['nama_dk']; ?></a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modalSOP" tabindex="-1" role="dialog" aria-labelledby="modalSOPLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalSOPLabel">Download Dokumen SOP</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <?php foreach ($sop_data as $sop) : ?>
-                    <a href="/admin_spmi/download_dokumen/<?= $sop['id_dk']; ?>"> <?= $sop['nama_dk']; ?></a>
                 <?php endforeach; ?>
             </div>
         </div>
