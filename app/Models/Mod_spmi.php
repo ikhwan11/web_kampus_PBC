@@ -14,4 +14,9 @@ class Mod_spmi extends Model
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
+
+    public function data_sop()
+    {
+        return $this->where(['jenis_dk_tambahan' => 'SOP']);
+    }
 }

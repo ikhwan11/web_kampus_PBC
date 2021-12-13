@@ -160,4 +160,43 @@ class Admin_user extends BaseController
       </div>');
         return redirect()->to('/admin_user');
     }
+
+    public function Upass()
+    {
+        $data = [
+            'validation' => \Config\Services::validation(),
+        ];
+        return view('back_end/user_Upass', $data);
+    }
+
+    public function Upass_act()
+    {
+
+        if (!$this->validate([
+
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} baru harus diisi.'
+                ]
+            ],
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to('/Admin_user/Upass/')->withInput()->with('validation', $validation);
+        }
+
+        $this->userModel->save([
+            'id' => $this->request->getVar('id'),
+            'password' => $this->request->getVar('password'),
+        ]);
+
+        session()->setFlashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        password berhasil diubah.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+
+        return redirect()->to('/Admin_user/Upass');
+    }
 }

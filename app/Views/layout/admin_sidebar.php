@@ -103,6 +103,12 @@
                         </ul>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Admin_user/Upass">
+                        <i class="mdi mdi-file-check menu-icon"></i>
+                        <span class="menu-title">Ubah Password</span>
+                    </a>
+                </li>
             <?php endif; ?>
 
             <?php if (session()->get('role') == 2) : ?>
@@ -167,6 +173,12 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Admin_user/Upass">
+                        <i class="mdi mdi-file-check menu-icon"></i>
+                        <span class="menu-title">Ubah Password</span>
+                    </a>
                 </li>
             <?php endif; ?>
 

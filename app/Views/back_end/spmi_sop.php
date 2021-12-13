@@ -14,10 +14,20 @@
                 </ol>
             </nav>
         </div>
-
+        <span style="color: red;">*Ctrl+f untuk mencari dokumen</span>
         <div class="col-lg-12 grid-margin stretch-card">
+
             <div class="card">
                 <div class="card-body">
+
+                    <!-- <form action="" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="cari dokumen.." name="keyword">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-danger" type="submit" name="submit">Cari</button>
+                            </div>
+                        </div>
+                    </form> -->
 
                     <?= session()->get('pesan'); ?>
 

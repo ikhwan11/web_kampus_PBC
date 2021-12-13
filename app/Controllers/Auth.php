@@ -32,6 +32,7 @@ class Auth extends BaseController
     if ($password ==  $row->password) {
       $data = array(
         'log' => TRUE,
+        'id' => $row->id,
         'nama' => $row->nama,
         'role' => $row->role,
         'username' => $row->username,

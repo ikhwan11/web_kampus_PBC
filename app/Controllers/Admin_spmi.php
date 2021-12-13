@@ -27,9 +27,8 @@ class Admin_spmi extends BaseController
 
     public function sop_menu()
     {
-        $db = db_connect();
         $data = [
-            'sop_data' => $db->query("SELECT * FROM tb_dokumen WHERE jenis_dk_tambahan = 'SOP' ORDER BY id_dk DESC")->getResultArray(),
+            'sop_data' => $this->spmiModel->data_sop()->findAll(),
         ];
         return view('back_end/spmi_sop', $data);
     }

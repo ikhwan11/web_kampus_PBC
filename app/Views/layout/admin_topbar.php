@@ -37,7 +37,7 @@
                             <?php } elseif (session()->get('role') == 2) { ?>
                                 Digital Marketing
                             <?php } else { ?>
-                                Staff
+                                <?= session()->get('nama'); ?>
                             <?php } ?>
                         </span>
                     </a>

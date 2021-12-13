@@ -75,7 +75,12 @@
                     </li>
                     <li class="dropdown"><a><span>Akademik</span> <i class="fas fa-chevron-down"></i></a>
                         <ul>
-                            <li><a href="http://e-learning.pbcakrawala.ac.id">E-Learning</a></li>
+                            <li class="dropdown"><a href="#"><span>E-Learning</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="http://e-learning.pbcakrawala.ac.id/site/userlogin">Mahasiswa</a></li>
+                                    <li><a href="http://e-learning.pbcakrawala.ac.id/site/login">Dosen</a></li>
+                                </ul>
+                            </li>
                             <li><a href="http://siakad.pbc.ac.id">SIAKAD</a></li>
                         </ul>
                     </li>
